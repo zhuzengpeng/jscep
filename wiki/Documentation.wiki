@@ -1,3 +1,17 @@
 #labels Phase-Implementation
   * [http://tools.ietf.org/html/rfc2315 PKCS#7]
   * [http://tools.ietf.org/html/rfc2986 PKCS#10]
+
+==Examples==
+
+{{{
+URL url = new URL("http://www.example.org/scep/");
+Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("proxy.example.org", 80));
+
+Requester client = new Requester(url, proxy);
+X500Principal entity = new X500Principal("CN=www.example.org,O=Example,C=GB");
+KeyPairGenerator gen = KeyPairGenerator.getInstance("RSA");
+KeyPair keyPair = gen.genKeyPair();
+
+client.enroll(entity, keyPair);
+}}}
