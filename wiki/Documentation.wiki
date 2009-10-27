@@ -5,13 +5,15 @@
 ==Examples==
 
 {{{
+X509Certificate existing = ...
 URL url = new URL("http://www.example.org/scep/");
 Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("proxy.example.org", 80));
 
-Requester client = new Requester(url, proxy);
 X500Principal entity = new X500Principal("CN=www.example.org,O=Example,C=GB");
 KeyPairGenerator gen = KeyPairGenerator.getInstance("RSA");
 KeyPair keyPair = gen.genKeyPair();
 
+Requester client = new Requester(url, proxy);
+client.setExistingCertificate(existing);
 client.enroll(entity, keyPair);
 }}}
