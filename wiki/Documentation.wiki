@@ -15,5 +15,6 @@ KeyPair keyPair = gen.genKeyPair();
 
 Requester client = new Requester(url, proxy);
 client.setExistingCertificate(existing);
+client.setCallbackHandler(handler);
 client.enroll(entity, keyPair);
 }}}
