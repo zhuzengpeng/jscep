@@ -5,7 +5,8 @@
 ==Examples==
 
 {{{
-X509Certificate existing = ...
+X509Certificate ca = ...;
+X509Certificate existing = ...;
 URL url = new URL("http://www.example.org/scep/");
 Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("proxy.example.org", 80));
 
@@ -14,6 +15,8 @@ KeyPairGenerator gen = KeyPairGenerator.getInstance("RSA");
 KeyPair keyPair = gen.genKeyPair();
 
 Requester client = new Requester(url, proxy);
+client.initialize(ca, keyPair);
+
 client.setExistingCertificate(existing);
 client.setCallbackHandler(handler);
 client.enroll(entity, keyPair);
