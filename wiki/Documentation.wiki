@@ -15,7 +15,7 @@ KeyPairGenerator gen = KeyPairGenerator.getInstance("RSA");
 KeyPair keyPair = gen.genKeyPair();
 
 Requester client = new Requester(url, proxy);
-client.initialize(ca, keyPair);
+client.initialize(ca);
 
 client.setExistingCertificate(existing);
 client.setCallbackHandler(handler);
