@@ -41,4 +41,4 @@ Requester client = new Requester.Builder(url)
                                 .build();
 }}}
 
-Invalid combinations of inputs (such as using an existing Certificate, put not providing the appropriate Key Pair) will result in an !InvalidStateException
+Invalid combinations of inputs (such as using an existing Certificate, put not providing the appropriate Key Pair) will result in an !java.lang.InvalidStateException
