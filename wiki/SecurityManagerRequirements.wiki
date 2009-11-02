@@ -7,11 +7,11 @@ This page lists the policy that must be granted to jSCEP by the application [htt
 
 = Details =
 
-You will require the following policy file entries:
+Where <HOST>:<PORT> is your CA's SCEP socket address, e.g. ca.example.org:80:
 
 {{{
 grant codeBase "file:/path/to/jscep.jar" {
-    permission java.net.SocketPermission "ca.example.org:80" "connect";
+    permission java.net.SocketPermission "<HOST>:<PORT>" "connect";
     permission java.lang.RuntimePermission "setFactory"
     permission java.security.SecurityPermission "insertProvider.BC"
     permission java.security.SecurityPermission "putProviderProperty.BC"
