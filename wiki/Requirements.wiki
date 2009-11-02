@@ -7,4 +7,7 @@ This page discusses the vision and requirements of the jSCEP project.
 
 = Details =
 
-  * Adherence to the latest [http://tools.ietf.org/html/draft-nourse-scep SCEP Internet-Draft].
+The goals of the jSCEP project are simple: we aim to produce a Java implementation of the SCEP protocol that complies with the [http://tools.ietf.org/html/draft-nourse-scep latest SCEP Internet-Draft], and is compatible with *any* compliant SCEP server implementation, including:
+
+   * [http://ejbca.sourceforge.net/ EJBCA]
+   * [http://www.openca.org/ OpenCA]
