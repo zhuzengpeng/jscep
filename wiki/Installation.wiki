@@ -19,7 +19,7 @@ jSCEP uses the [http://www.bouncycastle.org/ Bouncy Castle] CMS library ("bcmail
 
   * Generating and Parsing PKCS #7 Data
 
-Both of the Bouncy Castle libraries can be downloaded from the [http://www.bouncycastle.org/latest_releases.html latest releases] page on the project web site.
+Both of these libraries can be downloaded from the [http://www.bouncycastle.org/latest_releases.html latest releases] page on the Bouncy Castle web site.
 
 === Using the Bouncy Castle JCE Provider ===
 
