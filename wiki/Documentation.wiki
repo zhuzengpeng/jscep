@@ -13,7 +13,7 @@ Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("proxy.example.or
 
 Requester client = new Requester.Builder(url).proxy(proxy).subject(subject).build();
 X509Certificate cert = client.enroll(); // Retrieve the signed certificate
-KeyPair pair = client.getKeyPair(); // Retrieve the generated key pair
+KeyPair pair = client.getKeyPair();     // Retrieve the generated key pair
 }}}
 
 ===Renew an Existing Certificate===
@@ -24,5 +24,5 @@ KeyPair keyPair = ...;
 URL url = new URL("http://www.example.org/scep/");
 
 Requester client = new Requester.Builder(url).identity(identity).keyPair(keyPair).build();
-X509Certificate newIdentity = client.enroll();
+X509Certificate newIdentity = client.enroll();  // Retrieve the renewed certificate
 }}}
