@@ -21,3 +21,12 @@ grant codeBase "file:/path/to/bcprov.jar" {
     permission java.util.PropertyPermission "org.bouncycastle.pkcs1.strict", "read";
 }
 }}}
+
+If you have configured your JRE to add the Bouncy Castle provider, the following policy file will suffice:
+
+{{{
+grant codeBase "file:/path/to/jscep.jar" {
+    permission java.net.SocketPermission "${HOST}:${PORT}" "connect";
+    permission java.lang.RuntimePermission "setFactory"
+}
+}}}
