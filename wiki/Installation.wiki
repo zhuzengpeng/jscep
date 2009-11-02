@@ -9,7 +9,7 @@ This page describes how to add jSCEP to your own application.
 
 == Dependencies ==
 
-jSCEP requires the [http://www.bouncycastle.org/ Bouncy Castle] JCE Provider library ("bcprov") for:
+jSCEP uses the [http://www.bouncycastle.org/ Bouncy Castle] JCE Provider library ("bcprov") for:
 
   * Generating X.509 Certificates
   * Generating PKCS #10 Certificate Signing Requests
