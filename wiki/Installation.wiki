@@ -12,8 +12,13 @@ This page describes how to add jSCEP to your own application.
 jSCEP requires the Bouncy Castle Provider for:
 
   * Generating X.509 Certificates
+  * ASN.1 Handling
 
  and "SMIME/CMS" libraries from the [http://www.bouncycastle.org/ Bouncy Castle] project, both of which should be added to your project classpath.  Both libraries can be found on the [http://www.bouncycastle.org/latest_releases.html Bouncy Castle Latest Releases] page.
+
+jSCEP requires the Bouncy Castle CMS library for:
+
+  * PKCS #7
 
 === Bouncy Castle Provider ===
 
