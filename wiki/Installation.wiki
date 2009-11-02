@@ -32,8 +32,10 @@ Both methods are covered by the [http://www.bouncycastle.org/specifications.html
 
 == Using jSCEP ==
 
-Using jSCEP is *easy*.  
+Using jSCEP is *easy*:
 
-Simply download the [http://code.google.com/p/jscep/downloads/list?q=label:Featured%20type=Library the latest release] of jSCEP, add it to your application classpath alongside the relevant libraries from the Bouncy Castle project and you're ready to go!
+  * Download the [http://code.google.com/p/jscep/downloads/list?q=label:Featured%20type=Library the latest release] of jSCEP
+  * Add the jSCEP and Bouncy Castle JARs to your classpath
+  * Go!
 
 See SecurityManagerRequirements
