@@ -3,7 +3,7 @@
 
 = Introduction =
 
-This page lists the permissions that must be granted to jSCEP by the application [http://java.sun.com/javase/6/docs/api/java/lang/SecurityManager.html SecurityManager].
+This page lists the policy that must be granted to jSCEP by the application [http://java.sun.com/javase/6/docs/api/java/lang/SecurityManager.html SecurityManager].
 
 = Details =
 
