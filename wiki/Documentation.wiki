@@ -15,11 +15,11 @@ Requester client = new Requester.Builder(url).proxy(proxy).subject(subject).buil
 X509Certificate cert = client.enroll();
 }}}
 
-===Renew Existing Certificate===
+===Renew an Existing Certificate===
 
 {{{
-X509Certificate identity = getCertificate();
-KeyPair keyPair = getKeyPair();
+X509Certificate identity = ...;
+KeyPair keyPair = ...;
 URL url = new URL("http://www.example.org/scep/");
 
 Requester client = new Requester.Builder(url).identity(identity).keyPair(keyPair).build();
