@@ -11,6 +11,10 @@ This page describes how to add jSCEP to your own application.
 
 jSCEP depends on the "Provider" and "SMIME/CMS" libraries from the [http://www.bouncycastle.org/ Bouncy Castle] project, both of which should be added to your project classpath.  Both libraries can be found on the [http://www.bouncycastle.org/latest_releases.html Bouncy Castle Latest Releases] page.
 
+=== Bouncy Castle Provider ===
+
+When using Bouncy Castle, you have two choices: to install the Bouncy Castle Provider at runtime, or to configure your JDK instead.
+
 == Using jSCEP ==
 
 Using jSCEP is *easy*.  Simply download the [http://code.google.com/p/jscep/downloads/list?q=label:Featured%20type=Library the latest release] of jSCEP, add it to your application classpath alongside the required libraries from the Bouncy Castle project and you're ready to go.
