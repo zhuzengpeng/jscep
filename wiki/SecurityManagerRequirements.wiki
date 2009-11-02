@@ -7,6 +7,6 @@ This page lists the permissions that must be granted to jSCEP by the application
 
 = Details =
 
-   * [http://java.sun.com/javase/6/docs/api/java/net/SocketPermission.html java.net.SocketPermission] "connect,resolve" for SCEP server, e.g. "ca.example.org:80"
+   * [http://java.sun.com/javase/6/docs/api/java/net/SocketPermission.html java.net.SocketPermission] "connect,resolve" for your CA's SCEP socket address, e.g. "ca.example.org:80"
    * [http://java.sun.com/javase/6/docs/api/java/net/NetPermission.html java.net.NetPermission] "specifyStreamHandler"
    * [http://java.sun.com/javase/6/docs/api/java/security/SecurityPermission.html java.security.SecurityPermission] "insertProvider.BC"
