@@ -13,4 +13,4 @@ jSCEP depends on the "Provider" and "SMIME/CMS" libraries from the [http://www.b
 
 == Using jSCEP ==
 
-Using jSCEP is *easy*.  Simply download the [http://code.google.com/p/jscep/downloads/list?q=label:Featured%20type=Library the latest release] of jSCEP, and add it to your class path alongside the libraries obtained from the Bouncy Castle project.
+Using jSCEP is *easy*.  Simply download the [http://code.google.com/p/jscep/downloads/list?q=label:Featured%20type=Library the latest release] of jSCEP, and add it to your application classpath alongside the libraries from the Bouncy Castle project.
