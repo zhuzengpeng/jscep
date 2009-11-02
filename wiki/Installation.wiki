@@ -1,9 +1,9 @@
-#summary How to use jSCEP in your own application.
+#summary How to add jSCEP to your own application.
 #labels Phase-Deploy
 
 = Introduction =
 
-This page describes how to use jSCEP in your own application.
+This page describes how to add jSCEP to your own application.
 
 = Details =
 
