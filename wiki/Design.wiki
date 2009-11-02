@@ -40,3 +40,5 @@ Requester client = new Requester.Builder(url)
                                 .caIdentifier("ca")
                                 .build();
 }}}
+
+Invalid combinations of inputs (such as using an existing Certificate, put not providing the appropriate Key Pair) will result in an !InvalidStateException
