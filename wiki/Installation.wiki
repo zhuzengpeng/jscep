@@ -15,11 +15,11 @@ jSCEP requires the [http://www.bouncycastle.org/ Bouncy Castle] JCE Provider lib
   * Generating PKCS #10 Certificate Signing Requests
   * Generating and Parsing ASN.1 Data
 
- and "SMIME/CMS" libraries from the [http://www.bouncycastle.org/ Bouncy Castle] project, both of which should be added to your project classpath.  Both libraries can be found on the [http://www.bouncycastle.org/latest_releases.html Bouncy Castle Latest Releases] page.
-
 jSCEP uses the [http://www.bouncycastle.org/ Bouncy Castle] CMS library ("bcmail") for:
 
   * Generating and Parsing PKCS #7 Data
+
+Both of the Bouncy Castle libraries can be downloaded from the [http://www.bouncycastle.org/latest_releases.html latest releases] page on the project web site.
 
 === Bouncy Castle Provider ===
 
