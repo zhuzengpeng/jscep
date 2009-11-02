@@ -1,5 +1,5 @@
 #summary How to use jSCEP in your own application
-#labels Phase-Implementation
+#labels Phase-Implementation,Featured
 
 = Introduction =
 
