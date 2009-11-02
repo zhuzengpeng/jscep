@@ -6,3 +6,28 @@
 This page discusses how to use jSCEP in your own application.
 
 = Details =
+
+== Simple ==
+
+{{{
+X500Principal subject = new X500Principal("CN=jscep.googlecode.com,O=Google Inc,L=Mountain View,ST=California,C=US");
+URL url = new URL("http://www.example.org/scep/");
+Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("proxy.example.org", 80));
+
+Requester client = new Requester.Builder(url).proxy(proxy).subject(subject).build();
+X509Certificate cert = client.enroll(); // Retrieve the signed certificate
+KeyPair pair = client.getKeyPair();     // Retrieve the generated key pair
+}}}
+
+== Renew an Existing Certificate ==
+
+If the CA supports renewal, we can renew an existing certificate.
+
+{{{
+X509Certificate identity = ...;
+KeyPair keyPair = ...;
+URL url = new URL("http://www.example.org/scep/");
+
+Requester client = new Requester.Builder(url).identity(identity).keyPair(keyPair).build();
+identity = client.enroll();  // Retrieve the renewed certificate
+}}}
