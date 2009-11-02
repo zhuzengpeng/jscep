@@ -26,5 +26,5 @@ KeyPair keyPair = ...;
 URL url = new URL("http://www.example.org/scep/");
 
 Requester client = new Requester.Builder(url).identity(identity).keyPair(keyPair).build();
-X509Certificate newIdentity = client.enroll();  // Retrieve the renewed certificate
+identity = client.enroll();  // Retrieve the renewed certificate
 }}}
