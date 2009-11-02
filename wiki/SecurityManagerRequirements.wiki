@@ -7,7 +7,7 @@ This page lists the policy that must be granted to jSCEP by the application [htt
 
 = Details =
 
-For the jscep JAR:
+For the jscep JAR (adjust your SCEP socket address to suit):
 
    * [http://java.sun.com/javase/6/docs/api/java/net/SocketPermission.html java.net.SocketPermission] "ca.example.org:80" "connect" 
    * [http://java.sun.com/javase/6/docs/api/java/net/NetPermission.html java.lang.RuntimePermission] "setFactory"
