@@ -13,7 +13,7 @@ jSCEP depends on the "Provider" and "SMIME/CMS" libraries from the [http://www.b
 
 === Bouncy Castle Provider ===
 
-When using Bouncy Castle, you have two choices: to install the Bouncy Castle Provider at runtime, or to configure your JDK instead.
+Follow the [http://www.bouncycastle.org/specifications.html#install installation instructions] on the BC site.
 
 == Using jSCEP ==
 
