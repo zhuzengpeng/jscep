@@ -7,7 +7,7 @@ This page lists the policy that must be granted to jSCEP by the application [htt
 
 = Details =
 
-For the jscep JAR (adjust your SCEP socket address to suit):
+You will require the following policy file entries:
 
 {{{
 grant codeBase "file:/path/to/jscep.jar" {
@@ -16,7 +16,6 @@ grant codeBase "file:/path/to/jscep.jar" {
     permission java.security.SecurityPermission "insertProvider.BC"
     permission java.security.SecurityPermission "putProviderProperty.BC"
 }
-
 grant codeBase "file:/path/to/bcprov.jar" {
     permission java.security.SecurityPermission "putProviderProperty.BC";
     permission java.util.PropertyPermission "org.bouncycastle.pkcs1.strict", "read";
