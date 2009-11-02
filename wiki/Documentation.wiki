@@ -1,4 +1,4 @@
-#labels Phase-Implementation
+#labels Phase-Implementation,Featured
   * [http://tools.ietf.org/html/rfc2315 PKCS#7]
   * [http://tools.ietf.org/html/rfc2986 PKCS#10]
 
