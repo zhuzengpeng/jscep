@@ -1,5 +1,5 @@
-#summary Requirements of jSCEP
-#labels Phase-Requirements
+#summary jSCEP Project Vision
+#labels Phase-Requirements,Featured
 
 = Introduction =
 
