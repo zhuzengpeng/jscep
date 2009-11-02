@@ -25,7 +25,7 @@ Both of these libraries can be downloaded from the [http://www.bouncycastle.org/
 
 The Bouncy Castle JCE Provider can be added to your runtime environment at runtime (by adding it your classpath), or by dropping the provider JAR into your $JAVA_HOME/jre/lib/ext directory and adding it to your JRE configuration.  
 
-Both methods are covered by the [http://www.bouncycastle.org/specifications.html#install installation instructions] on the BC site.
+Both methods are covered by the [http://www.bouncycastle.org/specifications.html#install installation instructions] on the BC web site.
 
 == Using jSCEP ==
 
