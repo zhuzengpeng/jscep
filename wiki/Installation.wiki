@@ -23,7 +23,10 @@ Both of these libraries can be downloaded from the [http://www.bouncycastle.org/
 
 === Using the Bouncy Castle JCE Provider ===
 
-The Bouncy Castle JCE Provider can be added to your environment at runtime, or by dropping the provider JAR into your $JAVA_HOME/jre/lib/ext directory and adding it to your JRE configuration.  
+You can use the Bouncy Castle JCE Provider in two ways:
+
+  * adding the JAR to your classpath and calling Security.addProvider(...) in your application
+  * putting the JAR into your $JAVA_HOME/jre/lib/ext directory and configuring your JRE accordingly  
 
 Both methods are covered by the [http://www.bouncycastle.org/specifications.html#install installation instructions] on the BC web site.
 
