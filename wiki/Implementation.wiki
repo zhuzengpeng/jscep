@@ -3,7 +3,7 @@
 
 = Introduction =
 
-This page discusses how to use jSCEP in your own application.  For full usage information, you are recommended to download and read the [http://code.google.com/p/jscep/downloads/list?q=label:Featured%20type=Docs latest javadocs].
+This page discusses how to use jSCEP in your own application.  For full usage information, you are recommended to download and read the [http://code.google.com/p/jscep/downloads/list?q=label:Featured%20type=Docs current javadoc package].
 
 = Details =
 
