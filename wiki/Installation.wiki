@@ -9,7 +9,7 @@ This page describes how to add jSCEP to your own application.
 
 == Dependencies ==
 
-jSCEP requires the Bouncy Castle Provider for:
+jSCEP requires the Bouncy Castle JCE Provider for:
 
   * Generating X.509 Certificates
   * Generating PKCS #10 Requests
