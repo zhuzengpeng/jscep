@@ -13,7 +13,7 @@ jSCEP requires the Bouncy Castle JCE Provider for:
 
   * Generating X.509 Certificates
   * Generating PKCS #10 Requests
-  * ASN.1 Handling
+  * Generating and Parsing ASN.1
 
  and "SMIME/CMS" libraries from the [http://www.bouncycastle.org/ Bouncy Castle] project, both of which should be added to your project classpath.  Both libraries can be found on the [http://www.bouncycastle.org/latest_releases.html Bouncy Castle Latest Releases] page.
 
