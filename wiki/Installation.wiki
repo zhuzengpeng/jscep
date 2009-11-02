@@ -23,10 +23,10 @@ Both of the Bouncy Castle libraries can be downloaded from the [http://www.bounc
 
 === Using the Bouncy Castle JCE Provider ===
 
-The Bouncy Castle JCE Provider can be added to your runtime environment at runtime (by adding it your classpath), or by adding it to your JRE configuration.  Both methods are covered by the [http://www.bouncycastle.org/specifications.html#install installation instructions] on the BC site.
+The Bouncy Castle JCE Provider can be added to your runtime environment at runtime (by adding it your classpath), or by dropping the provider JAR into your $JAVA_HOME/jre/lib/ext directory and adding it to your JRE configuration.  Both methods are covered by the [http://www.bouncycastle.org/specifications.html#install installation instructions] on the BC site.
 
 == Using jSCEP ==
 
-Using jSCEP is *easy*.  Simply download the [http://code.google.com/p/jscep/downloads/list?q=label:Featured%20type=Library the latest release] of jSCEP, add it to your application classpath alongside the required libraries from the Bouncy Castle project and you're ready to go.
+Using jSCEP is *easy*.  Simply download the [http://code.google.com/p/jscep/downloads/list?q=label:Featured%20type=Library the latest release] of jSCEP, add it to your application classpath alongside the relevant libraries from the Bouncy Castle project and you're ready to go!
 
-See: SecurityManagerRequirements
+See SecurityManagerRequirements
