@@ -1,0 +1,9 @@
+#summary SCEP Resources
+
+= Introduction =
+
+This page discusses SCEP resources on the Internet.
+
+= Mailing Lists =
+
+  * [VPN Consortium http://www.vpnc.org/scep/]
