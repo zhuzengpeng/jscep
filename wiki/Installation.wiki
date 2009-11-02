@@ -1,4 +1,4 @@
-#summary How to install jSCEP
+#summary How to incorporate jSCEP into your own application.
 #labels Phase-Deploy
 
 = Introduction =
