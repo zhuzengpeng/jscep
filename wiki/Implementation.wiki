@@ -19,7 +19,7 @@ X509Certificate cert = client.enroll(); // Retrieve the signed certificate
 KeyPair pair = client.getKeyPair();     // Retrieve the generated key pair
 }}}
 
-== Renew an Existing Certificate ==
+== Renewing an Existing Certificate ==
 
 If the CA supports renewal, we can renew an existing certificate.
 
