@@ -1,0 +1,12 @@
+#summary What permissions are required?
+#labels Phase-Deploy
+
+= Introduction =
+
+
+
+= Details =
+
+   * java.net.SocketPermission "connect,resolve"
+   * java.net.NetPermssion "specifyStreamHandler"
+   * java.security.SecurityPermission "insertProvider.BC"
