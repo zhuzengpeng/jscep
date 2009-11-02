@@ -7,6 +7,6 @@
 
 = Details =
 
-   * java.net.SocketPermission "connect,resolve"
-   * java.net.NetPermssion "specifyStreamHandler"
-   * java.security.SecurityPermission "insertProvider.BC"
+   * [http://java.sun.com/javase/6/docs/api/java/net/SocketPermission.html java.net.SocketPermission] "connect,resolve"
+   * [http://java.sun.com/javase/6/docs/api/java/net/NetPermission.html java.net.NetPermssion] "specifyStreamHandler"
+   * [http://java.sun.com/javase/6/docs/api/java/security/SecurityPermission.html java.security.SecurityPermission] "insertProvider.BC"
