@@ -10,3 +10,31 @@ This page discusses some of the design highlights of jSCEP
 == Requester Builder ==
 
 In order to create a new [http://code.google.com/p/jscep/source/browse/trunk/src/main/com/google/code/jscep/Requester.java Requester] instance, application clients must use the Requester.Builder class to build up the arguments.
+
+{{{
+URL url = new URL("http://ca.example.org/scep/");
+X500Principal subject = ...;
+KeyPair keyPair = ...;
+
+Requester.Builder builder = new Requester.Builder(url);
+builder = builder.proxy(Proxy.NO_PROXY);
+builder = builder.subject(subject);
+builder = builder.keyPair(keyPair);
+builder = builder.caIdentifier("ca");
+Requester client = builder.build();
+}}}
+
+is the same as:
+
+{{{
+URL url = new URL("http://ca.example.org/scep/");
+X500Principal subject = ...;
+KeyPair keyPair = ...;
+
+Requester client = new Requester.Builder(url)
+                                .proxy(Proxy.NO_PROXY)
+                                .subject(subject)
+                                .keyPair(keyPair)
+                                .caIdentifier("ca")
+                                .build();
+}}}
