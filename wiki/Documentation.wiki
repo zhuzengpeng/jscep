@@ -1,6 +1,4 @@
 #labels Phase-Implementation,Featured
-=Documentation=
-
 ==Requirements==
 
 To use jSCEP, you will need to add the following JARs to your classpath:
