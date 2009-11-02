@@ -1,0 +1,10 @@
+#summary Requirements of jSCEP
+#labels Phase-Requirements
+
+= Introduction =
+
+This page discusses the vision and requirements of the jSCEP project.
+
+= Details =
+
+  * Adherence to the latest [http://tools.ietf.org/html/draft-nourse-scep SCEP Internet-Draft].
