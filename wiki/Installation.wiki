@@ -3,8 +3,7 @@
 
 = Introduction =
 
-Add your content here.
-
+This page describes how to install jSCEP for use with your own application.
 
 = Details =
 
