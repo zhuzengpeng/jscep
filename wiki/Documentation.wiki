@@ -12,6 +12,11 @@ To use jSCEP, you will need to add the following JARs to your classpath:
 
 Bouncy Castle libraries are available from the [http://www.bouncycastle.org/latest_releases.html Bouncy Castle Latest Releases] page.
 
+
+{{{
+java -cp jSCEP-r43.jar:bcprov-jdk16-144.jar:bcmail-jdk16-144.jar ...
+}}}
+
 ==Examples==
 
 ===Simple===
