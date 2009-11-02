@@ -22,7 +22,7 @@ grant codeBase "file:/path/to/bcprov.jar" {
 }
 }}}
 
-If you have configured your JRE to add the Bouncy Castle provider, the following policy file will suffice:
+If you have configured your JRE to use the Bouncy Castle provider, the following policy file will suffice:
 
 {{{
 grant codeBase "file:/path/to/jscep.jar" {
