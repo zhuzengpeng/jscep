@@ -9,7 +9,9 @@ This page discusses some of the design highlights of jSCEP
 
 == Requester Builder ==
 
-In order to create a new [http://code.google.com/p/jscep/source/browse/trunk/src/main/com/google/code/jscep/Requester.java Requester] instance, application clients must use the Requester.Builder class to build up the arguments.  This prevents us from having to define multiple constructors for Requester.
+Because there are quite a few optional inputs for a SCEP client, we use the Builder pattern for creating a new [http://code.google.com/p/jscep/source/browse/trunk/src/main/com/google/code/jscep/Requester.java Requester] instance.  This prevents us from having to define multiple constructors for Requester.
+
+The Requester.Builder class has a fluent interface, so 
 
 {{{
 URL url = new URL("http://ca.example.org/scep/");
