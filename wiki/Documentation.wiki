@@ -6,7 +6,7 @@
 
 To use jSCEP, you will need to add the following JARs to your classpath:
 
-   * [http://code.google.com/p/jscep/downloads/list?q=label:Featured%20type=Library jSCEP Latest Release]
+   * [http://code.google.com/p/jscep/downloads/list?q=label:Featured%20type=Library Latest jSCEP Release]
    * [http://www.bouncycastle.org/latest_releases.html Bouncy Castle Provider Library]
    * [http://www.bouncycastle.org/latest_releases.html Bouncy Castle SMIME/CMS Library]
 
