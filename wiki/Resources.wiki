@@ -6,4 +6,4 @@ This page discusses SCEP resources on the Internet.
 
 = Mailing Lists =
 
-  * [VPN Consortium http://www.vpnc.org/scep/]
+  * [http://www.vpnc.org/scep/ VPN Consortium]
