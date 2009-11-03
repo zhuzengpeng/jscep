@@ -18,7 +18,7 @@ Requester client = new Requester.Builder(url)
                                 .proxy(proxy)
                                 .subject(subject)
                                 .build();
-X509Certificate cert = client.enroll(); // Retrieve the signed certificate
+List<X509Certificate> certs = client.enroll(); // Retrieve the signed certificate
 KeyPair pair = client.getKeyPair();     // Retrieve the generated key pair
 }}}
 
@@ -35,5 +35,5 @@ Requester client = new Requester.Builder(url)
                                 .identity(identity)
                                 .keyPair(keyPair)
                                 .build();
-identity = client.enroll();  // Retrieve the renewed certificate
+List<X509Certificate> certs = client.enroll();  // Retrieve the renewed certificate
 }}}
