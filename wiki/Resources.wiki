@@ -13,7 +13,7 @@ This page discusses SCEP resources on the Internet.
 
   * [http://www.ejbca.org EJBCA]
   * [http://www.openca.org/ OpenCA]
-  * [http://technet.microsoft.com/en-us/library/cc779149%28WS.10%29.aspx Microsoft Certificate Services]
+  * [http://technet.microsoft.com/en-us/library/cc779826%28WS.10%29.aspx Microsoft Certificate Services]
   * [http://www.cs.auckland.ac.nz/~pgut001/cryptlib/ CryptLib]
   * [http://www.entrust.com/pki/index.htm Entrust Authority]
   * [http://www.redhat.com/certificate_system/ Red Hat Certificate System]
