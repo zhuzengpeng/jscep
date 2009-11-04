@@ -17,3 +17,4 @@ This page discusses SCEP resources on the Internet.
   * [http://www.cs.auckland.ac.nz/~pgut001/cryptlib/ CryptLib]
   * [http://www.entrust.com/pki/index.htm Entrust Authority]
   * [http://www.redhat.com/certificate_system/ Red Hat Certificate System]
+  * [http://www.ssh.com/products/infrastructure/client-server/ SSH Tectia]
