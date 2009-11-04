@@ -12,12 +12,12 @@ This page describes how to add jSCEP to your own application.
 jSCEP uses the [http://www.bouncycastle.org/ Bouncy Castle] JCE Provider library ("bcprov") for:
 
   * Generating X.509 Certificates
-  * Generating PKCS #10 Certificate Signing Requests
+  * Generating [http://tools.ietf.org/html/rfc2314 PKCS #10] Certificate Signing Requests
   * Generating and Parsing ASN.1 Data
 
 jSCEP uses the [http://www.bouncycastle.org/ Bouncy Castle] CMS library ("bcmail") for:
 
-  * Generating and Parsing PKCS #7 Data
+  * Generating and Parsing [http://tools.ietf.org/html/rfc2315 PKCS #7] Data
 
 Both of these libraries can be downloaded from the [http://www.bouncycastle.org/latest_releases.html latest releases] page on the Bouncy Castle web site.
 
