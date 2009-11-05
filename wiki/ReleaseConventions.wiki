@@ -23,4 +23,4 @@ If and when SCEP enters the standards track the first number will be increased b
 
 The trunk of this project will always follow the latest Internet-Draft or -- if the SCEP specification enters the standards track -- RFC.  When each new specification is released, the trunk will be branched with the name of deprecated specification, so when [http://tools.ietf.org/html/draft-nourse-scep-20 draft-nourse-scep-20] is released, the following path will be created:
 
-/branches/draft-nourse-scep-19
+*/branches/draft-nourse-scep-19*
