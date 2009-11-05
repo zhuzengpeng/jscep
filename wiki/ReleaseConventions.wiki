@@ -9,7 +9,7 @@ This page discusses how releases will be named, and the layout of the jSCEP SVN 
 
 Whilst SCEP is still in Internet-Draft state, each release will use the following naming convention:
 
-*jscep-0.<Internet-Draft Version>.<Last SVN Revision>*
+*jscep-0.<Internet-Draft Version>.<Latest SVN Revision>*
 
 So, if the current version of the Internet-Draft was 19, and the last SVN revision is 500, the release would be:
 
