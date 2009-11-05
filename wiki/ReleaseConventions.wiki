@@ -1,0 +1,13 @@
+#summary One-sentence summary of this page.
+#labels Phase-Design
+
+= Introduction =
+
+Add your content here.
+
+
+= Release Naming Convention =
+
+Whilst SCEP is still in Internet-Draft state, each release will use the following naming convention:
+
+jscep-0.<Internet-Draft Version>.<SVN Release>
