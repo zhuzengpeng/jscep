@@ -9,4 +9,4 @@ This wiki page details outstanding tasks that need to be completed before this p
 
   * Test Harness
   * Code Coverage
-  * Handle GetCertInitial
+  * Handle !GetCertInitial
