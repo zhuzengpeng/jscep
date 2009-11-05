@@ -5,6 +5,10 @@
 
 This page discusses why you can rely on jSCEP.
 
-= Details =
+= Unit Testing =
 
-   * JUnit
+All classes and interfaces should be tested as much as possible.
+
+= System Testing =
+
+Devise a test harness for system testing against SCEP server implementations.
