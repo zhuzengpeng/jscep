@@ -7,6 +7,7 @@ This wiki page details outstanding tasks that need to be completed before this p
 
 = Details =
 
-  * Test Harness
-  * Code Coverage
+  * Write a test harness to test against SCEP server implementations
+  * Increase code coverage
   * Handle !GetCertInitial
+  * Eliminate dependency on bcmail.jar
