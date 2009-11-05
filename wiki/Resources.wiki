@@ -11,6 +11,8 @@ This page discusses SCEP resources on the Internet.
 
 = CA Software with a SCEP Interface =
 
+As part of our [QualityAssurance QA] process, we would like to be able to schedule frequent system tests against all of the following products.  If you represent any of the organisations list below, please get in touch.
+
   * [http://www.ejbca.org EJBCA]
   * [http://www.openca.org/ OpenCA]
   * [http://technet.microsoft.com/en-us/library/cc779826%28WS.10%29.aspx Microsoft Certificate Services]
