@@ -1,13 +1,26 @@
-#summary One-sentence summary of this page.
+#summary Release Naming and SVN Branching Conventions
 #labels Phase-Design
 
 = Introduction =
 
-Add your content here.
-
+This page discusses how releases will be named, and the layout of the jSCEP SVN repository.
 
 = Release Naming Convention =
 
 Whilst SCEP is still in Internet-Draft state, each release will use the following naming convention:
 
-jscep-0.<Internet-Draft Version>.<SVN Release>
+jscep-0.<Internet-Draft Version>.<Last SVN Revision>
+
+So, if the current version of the Internet-Draft was 19, and the last SVN revision is 500, the release would be:
+
+jscep-0.19.500
+
+If and when SCEP enters the standards track the first number will be increased by 1 for each revision of the RFC, and the second number will be set to zero e.g.
+
+jscep-1.0.610
+
+= SVN Branching Convention =
+
+The trunk of this project will always follow the latest Internet-Draft or -- if the SCEP specification enters the standards track -- RFC.  When each new specification is released, the trunk will be branched with the name of deprecated specification, so when [http://tools.ietf.org/html/draft-nourse-scep-20 draft-nourse-scep-20] is released, the following path will be created:
+
+/branches/draft-nourse-scep-19
