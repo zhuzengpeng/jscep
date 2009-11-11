@@ -41,7 +41,6 @@ Requester client = new Requester.Builder(url)
                                 .build();
 // Retrieve the renewed certificate
 EnrollmentResult result = client.enroll("password".toCharArray()); 
-// Retrieve the signed certificate
 if (result.isPending() == false) {
     List<X509Certificate> certs = result.getCertificates();
     identity = certs.get(0);
