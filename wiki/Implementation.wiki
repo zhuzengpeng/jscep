@@ -35,7 +35,9 @@ Requester client = new Requester.Builder(url)
                                 .identity(identity)
                                 .keyPair(keyPair)
                                 .build();
-List<X509Certificate> certs = client.enroll("password".toCharArray()).getCertificates();  // Retrieve the renewed certificate
+// Retrieve the renewed certificate
+List<X509Certificate> certs = client.enroll("password".toCharArray()).getCertificates();  
+}}}
 
 == Pending Response ==
 
