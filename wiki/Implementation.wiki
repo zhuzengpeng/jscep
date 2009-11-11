@@ -18,7 +18,7 @@ Requester client = new Requester.Builder(url)
                                 .proxy(proxy)
                                 .subject(subject)
                                 .build();
-List<X509Certificate> certs = client.enroll(); // Retrieve the signed certificate
+List<X509Certificate> certs = client.enroll("password".toCharArray()).getCertificates(); // Retrieve the signed certificate
 KeyPair pair = client.getKeyPair();     // Retrieve the generated key pair
 }}}
 
@@ -35,5 +35,22 @@ Requester client = new Requester.Builder(url)
                                 .identity(identity)
                                 .keyPair(keyPair)
                                 .build();
-List<X509Certificate> certs = client.enroll();  // Retrieve the renewed certificate
+List<X509Certificate> certs = client.enroll("password".toCharArray()).getCertificates();  // Retrieve the renewed certificate
+
+== Pending Response ==
+
+{{{
+X509Certificate identity = ...;
+KeyPair keyPair = ...;
+URL url = new URL("http://www.example.org/scep/");
+
+Requester client = new Requester.Builder(url)
+                                .identity(identity)
+                                .keyPair(keyPair)
+                                .build();
+EnrollmentResponse response = client.enroll("password".toCharArray());
+ScheduledExecutorService exec = new ScheduledThreadPoolExecutor(1);
+if (response.isPending()) {
+    Future<EnrollmentResponse> future = exec.schedule(response.getTask(), 2L, TimeUnit.HOURS);
+}
 }}}
