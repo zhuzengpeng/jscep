@@ -47,7 +47,6 @@ if (result.isPending() == false) {
     identity = certs.get(0);
 }
 }}}
-}}}
 
 == Pending Response ==
 
