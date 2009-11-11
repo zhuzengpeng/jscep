@@ -53,6 +53,7 @@ Requester client = new Requester.Builder(url)
 EnrollmentResponse response = client.enroll("password".toCharArray());
 ScheduledExecutorService exec = new ScheduledThreadPoolExecutor(1);
 if (response.isPending()) {
+    // We don't have a certificate yet, come back in two hours.
     Future<EnrollmentResponse> future = exec.schedule(response.getTask(), 2L, TimeUnit.HOURS);
 }
 }}}
