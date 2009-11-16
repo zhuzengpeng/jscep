@@ -84,7 +84,8 @@ while (response.isPending()) {
     // Our CA guarantees a SLA of 2 hours for issuing new certificates, so come back then.
     ScheduledFuture<EnrollmentResponse> future = exec.schedule(result.getTask(), wait, unit);
     response = future.get(wait, unit);
-    // These steps can be repeated as many times as the result is pending, so you can implement a "backing-off" strategy by doubling your wait period.  Next time we'll wait four hours, then eight, etc.
+    // These steps can be repeated as many times as the result is pending, so you can implement a "backing-off" strategy by doubling your wait period.  
+    // Next time we'll wait four hours, then eight, etc.
     wait *= 2;
 }
 }}}
