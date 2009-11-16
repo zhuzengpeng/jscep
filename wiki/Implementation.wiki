@@ -77,12 +77,10 @@ Requester client = new Requester.Builder(url)
 // Send the enrollment request using our secret password
 EnrollmentResult result = client.enroll("password".toCharArray());
 // This time, our result IS pending.
-if (response.isPending()) {
+while (response.isPending()) {
     ScheduledExecutorService exec = new ScheduledThreadPoolExecutor(1);
     // Our CA guarantees a SLA of 2 hours for issuing new certificates, so come back then.
     Future<EnrollmentResponse> future = exec.schedule(result.getTask(), 2L, TimeUnit.HOURS);
     // These steps can be repeated as many times as the result is pending, so you can implement a "backing-off" strategy by doubling your wait period.
-} else {
-    ...
 }
 }}}
