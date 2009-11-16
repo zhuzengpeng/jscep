@@ -9,59 +9,80 @@ This page discusses how to use jSCEP in your own application.  For full usage in
 
 == Simple ==
 
-{{{
-X500Principal subject = new X500Principal("CN=jscep.googlecode.com,O=Google Inc,L=Mountain View,ST=California,C=US");
-URL url = new URL("http://www.example.org/scep/");
-Proxy proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress("proxy.example.org", 80));
+This example shows a simple automatic enrollment.
 
+{{{
+// Create the subject to be enrolled
+X500Principal subject = new X500Principal("CN=jscep.googlecode.com,O=Google Inc,L=Mountain View,ST=California,C=US");
+// Locate the SCEP server
+URL url = new URL("http://www.example.org/scep/");
+
+// Create a new client.  We'll use a generated key pair
 Requester client = new Requester.Builder(url)
-                                .proxy(proxy)
                                 .subject(subject)
                                 .build();
+// Send the enrollment request using our secret password
 EnrollmentResult result = client.enroll("password".toCharArray()); 
-// Retrieve the signed certificate
+// Automatic enrollments will NEVER be pending
 if (result.isPending() == false) {
+    // Get the list of certificates from the result.
     List<X509Certificate> certs = result.getCertificates();
-    KeyPair pair = client.getKeyPair();     // Retrieve the generated key pair
+    // Get the generated key pair.
+    KeyPair pair = client.getKeyPair();
 }
 }}}
 
 == Renewing an Existing Certificate ==
 
-If the CA supports renewal, we can renew an existing certificate.
+If the CA supports renewal, we can renew an existing certificate.  This example assumes automatic enrollment.
 
 {{{
+// Locate the existing certificate
 X509Certificate identity = ...;
+// ...and the key pair
 KeyPair keyPair = ...;
+// Locate the SCEP server
 URL url = new URL("http://www.example.org/scep/");
 
+// Create our new client
 Requester client = new Requester.Builder(url)
                                 .identity(identity)
                                 .keyPair(keyPair)
                                 .build();
-// Retrieve the renewed certificate
+// Send the enrollment request using our secret password
 EnrollmentResult result = client.enroll("password".toCharArray()); 
+// Again, automatic enrollment is NEVER pending
 if (result.isPending() == false) {
+    // Retrieve the list of certificates
     List<X509Certificate> certs = result.getCertificates();
+    // Replace the identity certificate.
     identity = certs.get(0);
 }
 }}}
 
 == Pending Response ==
 
+It is valid for the CA to have a manual policy, which might leave the request in a pending state.  jSCEP allows you to schedule the retry for later by providing a callable task.
+
 {{{
-X509Certificate identity = ...;
-KeyPair keyPair = ...;
+// Create the subject to be enrolled
+X500Principal subject = new X500Principal("CN=jscep.googlecode.com,O=Google Inc,L=Mountain View,ST=California,C=US");
+// Locate the SCEP server
 URL url = new URL("http://www.example.org/scep/");
 
+// Create a new client.  We'll use a generated key pair
 Requester client = new Requester.Builder(url)
-                                .identity(identity)
-                                .keyPair(keyPair)
+                                .subject(subject)
                                 .build();
+// Send the enrollment request using our secret password
 EnrollmentResult result = client.enroll("password".toCharArray());
-ScheduledExecutorService exec = new ScheduledThreadPoolExecutor(1);
+// This time, our result IS pending.
 if (response.isPending()) {
-    // We don't have a certificate yet, come back in two hours.
+    ScheduledExecutorService exec = new ScheduledThreadPoolExecutor(1);
+    // Our CA guarantees a SLA of 2 hours for issuing new certificates, so come back then.
     Future<EnrollmentResponse> future = exec.schedule(result.getTask(), 2L, TimeUnit.HOURS);
+    // These steps can be repeated as many times as the result is pending, so you can implement a "backing-off" strategy by doubling your wait period.
+} else {
+    ...
 }
 }}}
