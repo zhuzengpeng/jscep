@@ -75,7 +75,7 @@ X500Principal subject = getSubject();
 builder.subject(subject);
 }}}
 
-Alternatively, if you're renewing an existing certificate, you'll need to provide both the existing certificate and the RSA key pair associated with it.
+Alternatively, if you're renewing an existing certificate, you'll need to provide both the existing certificate and the *corresponding* RSA key pair:
 
 {{{
 X509Certificate identity = getCurrentCertificate();
@@ -132,7 +132,7 @@ This example shows a simple automatic enrollment.
 // Create the subject to be enrolled
 X500Principal subject = new X500Principal("CN=jscep.googlecode.com,O=Google Inc,L=Mountain View,ST=California,C=US");
 // Locate the SCEP server
-URL url = new URL("http://www.example.org/scep/");
+URL url = new URL("http://www.example.org/scep/pkiclient.exe");
 // Specify the CA digest
 byte[] digest = getDigest();
 
@@ -162,10 +162,13 @@ X509Certificate identity = ...;
 // ...and the key pair
 KeyPair keyPair = ...;
 // Locate the SCEP server
-URL url = new URL("http://www.example.org/scep/");
+URL url = new URL("http://www.example.org/scep/pkiclient.exe");
+// Specify the CA digest
+byte[] digest = getDigest();
 
 // Create our new client
 Requester client = new Requester.Builder(url)
+                                .caDigest(digest)
                                 .identity(identity)
                                 .keyPair(keyPair)
                                 .build();
@@ -188,10 +191,13 @@ It is valid for the CA to have a manual policy, which might leave the request in
 // Create the subject to be enrolled
 X500Principal subject = new X500Principal("CN=jscep.googlecode.com,O=Google Inc,L=Mountain View,ST=California,C=US");
 // Locate the SCEP server
-URL url = new URL("http://www.example.org/scep/");
+URL url = new URL("http://www.example.org/scep/pkiclient.exe");
+// Specify the CA digest
+byte[] digest = getDigest();
 
 // Create a new client.  We'll use a generated key pair
 Requester client = new Requester.Builder(url)
+                                .caDigest(digest)
                                 .subject(subject)
                                 .build();
 // Send the enrollment request using our secret password
