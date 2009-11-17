@@ -104,7 +104,7 @@ if (result.isPending() == false) {
 }
 }}}
 
-== Renewing an Existing Certificate ==
+= Renewing an Existing Certificate =
 
 If the CA supports renewal, we can renew an existing certificate.  This example assumes automatic enrollment.
 
@@ -132,7 +132,7 @@ if (result.isPending() == false) {
 }
 }}}
 
-== Pending Response ==
+= Pending Response =
 
 It is valid for the CA to have a manual policy, which might leave the request in a pending state.  jSCEP allows you to schedule the retry for later by providing a callable task.
 
