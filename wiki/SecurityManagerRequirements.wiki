@@ -26,6 +26,5 @@ If you have configured your JRE to use the Bouncy Castle provider, the following
 {{{
 grant codeBase "file:/path/to/jscep.jar" {
     permission java.net.SocketPermission "${HOST}:${PORT}" "connect";
-    permission java.lang.RuntimePermission "setFactory"
 }
 }}}
