@@ -16,6 +16,15 @@ URL url = new URL("http://www.example.org/scep/pkiclient.exe");
 Requester.Builder builder = new Requester.Builder(url);
 }}}
 
+== Technical Note on Validating URLs ==
+
+Your URL must satisfy both of the following requirements:
+
+{{{
+url.getPath().endsWith("pkiclient.exe");
+url.getQuery() == null;
+}}}
+
 == Identifying the CA ==
 
 Next, you must provide a way for the SCEP client to validate the CA.  This is done by providing the CA certificate:
