@@ -18,10 +18,12 @@ Requester.Builder builder = new Requester.Builder(url);
 
 == Technical Note on Validating URLs ==
 
-Your URL must satisfy both of the following requirements:
+Your URL must satisfy the following requirements:
 
 {{{
+url.getProtocol().matches("^https?$");
 url.getPath().endsWith("pkiclient.exe");
+url.getRef() == null
 url.getQuery() == null;
 }}}
 
