@@ -88,7 +88,7 @@ Proxy proxy = getProxy();
 builder.proxy(proxy);
 }}}
 
-If you don't provide a proxy, jSCEP will default to using Proxy.NO_PROXY.
+If you don't provide a proxy, jSCEP will default to using [http://java.sun.com/javase/6/docs/api/java/net/Proxy.html#NO_PROXY Proxy.NO_PROXY].
 
 = Simple Example =
 
