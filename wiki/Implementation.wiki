@@ -16,6 +16,8 @@ URL url = new URL("http://www.example.org/scep/pkiclient.exe");
 Requester.Builder builder = new Requester.Builder(url);
 }}}
 
+=== Identifying the CA ===
+
 Next, you must provide a way for the SCEP client to validate the CA.  This is done by providing the CA certificate:
 
 {{{
@@ -33,10 +35,49 @@ builder.caDigest(digest);
 If the digest isn't an `MD5` hash, you must specify the algorithm you've used, which must be one of `MD5`, `SHA-1`, `SHA-256` or `SHA-512`:
 
 {{{
-build.digestAlgorithm("SHA-1");
+builder.digestAlgorithm("SHA-1");
 }}}
 
 If you provide a CA certificate and a digest algorithm, the SCEP client will use the algorithm you have requested.
+
+=== Specifying the Certification Entity ==
+
+Next, you have to provide a certification entity.  What you provide is usually dictated by the operation you're performing.  If you're doing an initial enrollment, you'll usually provide a X.500 subject:
+
+{{{
+X500Principal subject = getSubject();
+builder.subject(subject);
+}}}
+
+Alternatively, if you're renewing an existing certificate, you'll need to provide both the existing certificate and the RSA key pair associated with it.
+
+{{{
+X509Certificate identity = getCurrentCertificate();
+KeyPair keyPair = getKeyPair();
+builder.identity(identity).keyPair(keyPair);
+}}}
+
+In the case of an initial enrollment, you can provide your own self-signed certificate and generated key pair if you prefer.  If you don't, jSCEP will generate a certificate from the provided X.500 subject and create a new RSA key pair, which you can retrieve later.
+
+=== CA Identification ===
+
+If your SCEP server provides multiple CA certificates, you might need to provide a ca identifier, e.g.
+
+{{{
+String caId = "myCA";
+builder.caId(caId);
+}}}
+
+=== Proxy Server ==
+
+If you need to go through a proxy server to make HTTP requests, you will need to tell jSCEP the location of your proxy:
+
+{{{
+Proxy proxy = getProxy();
+builder.proxy(proxy);
+}}}
+
+If you don't provide a proxy, jSCEP will default to using Proxy.NO_PROXY.
 
 == Simple ==
 
