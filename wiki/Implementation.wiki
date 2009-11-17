@@ -85,6 +85,15 @@ builder.identity(identity).keyPair(keyPair);
 
 In the case of an initial enrollment, you can provide your own self-signed certificate and generated key pair if you prefer.  If you don't, jSCEP will generate a certificate from the provided X.500 subject and create a new RSA key pair, which you can retrieve later.
 
+=== Technical Note on Key Pairs ==
+
+The key pair you provide *must* satisfy the following requirements:
+
+{{{
+keyPair.getPrivate().getAlgorithm().equals("RSA");
+keyPair.getPublic().getAlgorithm().equals("RSA");
+}}}
+
 == CA Identification ==
 
 If your SCEP server provides multiple CA certificates, you might need to provide a ca identifier, e.g.
