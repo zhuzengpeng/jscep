@@ -38,7 +38,7 @@ If the digest isn't an `MD5` hash, you must specify the algorithm you've used, w
 builder.digestAlgorithm("SHA-1");
 }}}
 
-If you provide a CA certificate and a digest algorithm, the SCEP client will use the algorithm you have requested.
+If you provide a CA certificate and a digest algorithm, the SCEP client will use the algorithm you have requested when it does its own internal calculations.
 
 === Specifying the Certification Entity ==
 
