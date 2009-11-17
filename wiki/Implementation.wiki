@@ -1,13 +1,13 @@
 #summary How to use jSCEP in your own application
 #labels Phase-Implementation,Featured
 
+<wiki:toc/>
+
 = Introduction =
 
 This page discusses how to use jSCEP in your own application.  For full usage information, you are recommended to download and read the [http://code.google.com/p/jscep/downloads/list?q=label:Featured%20type=Docs current javadoc package].
 
-= Details =
-
-== Building a Requester ==
+= Building a Requester =
 
 It is possible to build a SCEP client with a variety of inputs.  However, as a minimum, each client must be able to locate the SCEP server:
 
@@ -16,7 +16,7 @@ URL url = new URL("http://www.example.org/scep/pkiclient.exe");
 Requester.Builder builder = new Requester.Builder(url);
 }}}
 
-=== Identifying the CA ===
+== Identifying the CA ==
 
 Next, you must provide a way for the SCEP client to validate the CA.  This is done by providing the CA certificate:
 
@@ -40,7 +40,7 @@ builder.digestAlgorithm("SHA-1");
 
 If you provide a CA certificate and a digest algorithm, the SCEP client will use the algorithm you have requested when it does its own internal calculations.
 
-=== Specifying the Certification Entity ==
+== Specifying the Certification Entity ==
 
 Next, you have to provide a certification entity.  What you provide is usually dictated by the operation you're performing.  If you're doing an initial enrollment, you'll usually provide a X.500 subject:
 
@@ -59,7 +59,7 @@ builder.identity(identity).keyPair(keyPair);
 
 In the case of an initial enrollment, you can provide your own self-signed certificate and generated key pair if you prefer.  If you don't, jSCEP will generate a certificate from the provided X.500 subject and create a new RSA key pair, which you can retrieve later.
 
-=== CA Identification ===
+== CA Identification ==
 
 If your SCEP server provides multiple CA certificates, you might need to provide a ca identifier, e.g.
 
@@ -68,7 +68,7 @@ String caId = "myCA";
 builder.caId(caId);
 }}}
 
-=== Proxy Server ==
+== Proxy Server ==
 
 If you need to go through a proxy server to make HTTP requests, you will need to tell jSCEP the location of your proxy:
 
@@ -79,7 +79,7 @@ builder.proxy(proxy);
 
 If you don't provide a proxy, jSCEP will default to using Proxy.NO_PROXY.
 
-== Simple ==
+= Simple Example =
 
 This example shows a simple automatic enrollment.
 
