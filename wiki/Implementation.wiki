@@ -40,14 +40,16 @@ builder.digestAlgorithm("SHA-1");
 
 If you provide a CA certificate and a digest algorithm, the SCEP client will use the algorithm you have requested when it does its own internal calculations.
 
-*Technical Note*
+=== Technical Note on Calculating Digests ===
 
-The digest of the CA certificate is performed like so:
+The digest of the CA certificate is calculated like so:
 
 {{{
 MessageDigest md = MessageDigest.getInstance(digestAlgorithm);
 byte[] digest = md.digest(ca.getEncoded());
 }}}
+
+If your digest algorithm is not provided by a Security Provider, jSCEP will throw a NoSuchAlgorithmException.
 
 == Specifying the Certification Entity ==
 
