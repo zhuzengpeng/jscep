@@ -40,6 +40,15 @@ builder.digestAlgorithm("SHA-1");
 
 If you provide a CA certificate and a digest algorithm, the SCEP client will use the algorithm you have requested when it does its own internal calculations.
 
+*Technical Note*
+
+The digest of the CA certificate is performed like so:
+
+{{{
+MessageDigest md = MessageDigest.getInstance(digestAlgorithm);
+byte[] digest = md.digest(ca.getEncoded());
+}}}
+
 == Specifying the Certification Entity ==
 
 Next, you have to provide a certification entity.  What you provide is usually dictated by the operation you're performing.  If you're doing an initial enrollment, you'll usually provide a X.500 subject:
