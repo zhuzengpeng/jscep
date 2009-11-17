@@ -114,6 +114,16 @@ builder.proxy(proxy);
 
 If you don't provide a proxy, jSCEP will default to using [http://java.sun.com/javase/6/docs/api/java/net/Proxy.html#NO_PROXY Proxy.NO_PROXY].
 
+== Building ==
+
+Once you've finished specifying arguments, just call the `build` method on the `Requester.Builder`, and a newly-configured `Requester` is all yours:
+
+{{{
+Requester client = builder.build();
+}}}
+
+The builder will throw an [http://java.sun.com/javase/6/docs/api/java/lang/IllegalStateException.html IllegalStateException] if you fail to comply with the above rules.
+
 = Simple Example =
 
 This example shows a simple automatic enrollment.
@@ -123,9 +133,12 @@ This example shows a simple automatic enrollment.
 X500Principal subject = new X500Principal("CN=jscep.googlecode.com,O=Google Inc,L=Mountain View,ST=California,C=US");
 // Locate the SCEP server
 URL url = new URL("http://www.example.org/scep/");
+// Specify the CA digest
+byte[] digest = getDigest();
 
 // Create a new client.  We'll use a generated key pair
 Requester client = new Requester.Builder(url)
+                                .caDigest(digest)
                                 .subject(subject)
                                 .build();
 // Send the enrollment request using our secret password
