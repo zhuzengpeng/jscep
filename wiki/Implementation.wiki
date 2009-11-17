@@ -49,7 +49,7 @@ MessageDigest md = MessageDigest.getInstance(digestAlgorithm);
 byte[] digest = md.digest(ca.getEncoded());
 }}}
 
-If your digest algorithm is not provided by a Security Provider, jSCEP will throw a NoSuchAlgorithmException.
+If your digest algorithm is not provided by a Security Provider, jSCEP will throw a [http://java.sun.com/javase/6/docs/api/java/security/NoSuchAlgorithmException.html NoSuchAlgorithmException].
 
 == Specifying the Certification Entity ==
 
