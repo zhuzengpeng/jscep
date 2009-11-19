@@ -144,7 +144,7 @@ Requester client = new Requester.Builder(url)
 // Send the enrollment request using our secret password
 EnrollmentResult result = client.enroll("password".toCharArray()); 
 // Automatic enrollments will NEVER be pending
-if (result.isPending() == false) {
+if (result.getStatus() == PkiStatus.SUCCESS) {
     // Get the list of certificates from the result.
     List<X509Certificate> certs = result.getCertificates();
     // Get the generated key pair.
@@ -175,7 +175,7 @@ Requester client = new Requester.Builder(url)
 // Send the enrollment request using our secret password
 EnrollmentResult result = client.enroll("password".toCharArray()); 
 // Again, automatic enrollment is NEVER pending
-if (result.isPending() == false) {
+if (result.getStatus() == PkiStatus.SUCCESS) {
     // Retrieve the list of certificates
     List<X509Certificate> certs = result.getCertificates();
     // Replace the identity certificate.
@@ -206,7 +206,7 @@ EnrollmentResult result = client.enroll("password".toCharArray());
 ScheduledExecutorService exec = new ScheduledThreadPoolExecutor(1);
 TimeUnit unit = TimeUnit.HOURS;
 long wait = 2;
-while (response.isPending()) {
+while (result.getStatus() == PkiStatus.PENDING) {
     // Our CA guarantees a SLA of 2 hours for issuing new certificates, so come back then.
     ScheduledFuture<EnrollmentResponse> future = exec.schedule(result.getTask(), wait, unit);
     // Block this thread until it returns.  There are plenty of other things you can do here, obviously, depending on the responsibilities of this thread.
