@@ -138,11 +138,12 @@ URL url = new URL("http://www.example.org/scep/pkiclient.exe");
 // Specify the CA digest
 byte[] digest = getDigest();
 
+ClientConfiguration config = new ClientConfiguration();
+config.setUrl(url);
+config.setCaDigest(digest);
+config.setSubject(subject);
 // Create a new client.  We'll use a generated key pair
-Requester client = new Requester.Builder(url)
-                                .caDigest(digest)
-                                .subject(subject)
-                                .build();
+Client client = ClientFactory.createClient(config);
 // Send the enrollment request using our secret password
 EnrollmentResult result = client.enroll("password".toCharArray()); 
 // Automatic enrollments will NEVER be pending
@@ -169,11 +170,12 @@ URL url = new URL("http://www.example.org/scep/pkiclient.exe");
 byte[] digest = getDigest();
 
 // Create our new client
-Requester client = new Requester.Builder(url)
-                                .caDigest(digest)
-                                .identity(identity)
-                                .keyPair(keyPair)
-                                .build();
+ClientConfiguration config = new ClientConfiguration();
+config.setUrl(url);
+config.setCaDigest(digest);
+config.setIdentity(identity);
+config.setKeyPair(keyPair);
+Client client = ClientFactory.createClient(config);
 // Send the enrollment request using our secret password
 EnrollmentResult result = client.enroll("password".toCharArray()); 
 // Again, automatic enrollment is NEVER pending
@@ -198,10 +200,11 @@ URL url = new URL("http://www.example.org/scep/pkiclient.exe");
 byte[] digest = getDigest();
 
 // Create a new client.  We'll use a generated key pair
-Requester client = new Requester.Builder(url)
-                                .caDigest(digest)
-                                .subject(subject)
-                                .build();
+ClientConfiguration config = new ClientConfiguration();
+config.setUrl(url);
+config.setCaDigest(digest);
+config.setSubject(subject);
+Client client = ClientFactory.createClient(config);
 // Send the enrollment request using our secret password
 EnrollmentResult result = client.enroll("password".toCharArray());
 // We fully expect our response to be pending...
