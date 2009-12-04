@@ -16,8 +16,9 @@ This section shows how to create a SCEP client.
 As a minimum, each client must be able to locate the SCEP server:
 
 {{{
+ClientConfiguration config = new ClientConfiguration();
 URL url = new URL("http://www.example.org/scep/pkiclient.exe");
-Requester.Builder builder = new Requester.Builder(url);
+config.setUrl(url);
 }}}
 
 === Technical Note on Validating URLs ===
@@ -37,20 +38,20 @@ Next, you must provide a way for the SCEP client to validate the CA.  This is do
 
 {{{
 X509Certificate ca = getCaCertificate();
-builder.caCertificate(ca);
+config.setCaCertificate(ca);
 }}}
 
 or by providing the digest of the certificate:
 
 {{{
 byte[] digest = getCaDigest();
-builder.caDigest(digest);
+config.setCaDigest(digest);
 }}}
 
 If the digest isn't an `MD5` hash, you must specify the algorithm you've used, which must be one of `MD5`, `SHA-1`, `SHA-256` or `SHA-512`:
 
 {{{
-builder.digestAlgorithm("SHA-1");
+config.setDigestAlgorithm("SHA-1");
 }}}
 
 If you provide a CA certificate and a digest algorithm, the SCEP client will use the algorithm you have requested when it does its own internal calculations.
@@ -72,7 +73,7 @@ Next, you have to provide a certification entity.  What you provide is usually d
 
 {{{
 X500Principal subject = getSubject();
-builder.subject(subject);
+config.setSubject(subject);
 }}}
 
 Alternatively, if you're renewing an existing certificate, you'll need to provide both the existing certificate and the *corresponding* RSA key pair:
@@ -80,7 +81,8 @@ Alternatively, if you're renewing an existing certificate, you'll need to provid
 {{{
 X509Certificate identity = getCurrentCertificate();
 KeyPair keyPair = getKeyPair();
-builder.identity(identity).keyPair(keyPair);
+config.setIdentity(identity);
+config.setKeyPair(keyPair);
 }}}
 
 In the case of an initial enrollment, you can provide your own self-signed certificate and generated key pair if you prefer.  If you don't, jSCEP will generate a certificate from the provided X.500 subject and create a new RSA key pair, which you can retrieve later.
@@ -100,7 +102,7 @@ If your SCEP server provides multiple CA certificates, you might need to provide
 
 {{{
 String caId = "myCA";
-builder.caId(caId);
+config.setCaId(caId);
 }}}
 
 == Proxy Server ==
@@ -109,17 +111,17 @@ If you need to go through a proxy server to make HTTP requests, you will need to
 
 {{{
 Proxy proxy = getProxy();
-builder.proxy(proxy);
+config.setProxy(proxy);
 }}}
 
 If you don't provide a proxy, jSCEP will default to using [http://java.sun.com/javase/6/docs/api/java/net/Proxy.html#NO_PROXY Proxy.NO_PROXY].
 
 == Building ==
 
-Once you've finished specifying arguments, just call the `build` method on the `Requester.Builder`, and a newly-configured `Requester` is all yours:
+Once you've finished specifying arguments, just call the `createClent` method on the `ClientFactory`, and a newly-configured `Client` is all yours:
 
 {{{
-Requester client = builder.build();
+Client client = ClientFactory.createClient(config);
 }}}
 
 The builder will throw an [http://java.sun.com/javase/6/docs/api/java/lang/IllegalStateException.html IllegalStateException] if you fail to comply with the above rules.
