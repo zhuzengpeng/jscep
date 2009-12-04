@@ -8,6 +8,8 @@ Add your content here.
 
 = Download the Source =
 
-
-
+{{{
+svn checkout http://jscep.googlecode.com/svn/trunk/ jscep-read-only
+cd jscep-read-only
 mvn package
+}}}
