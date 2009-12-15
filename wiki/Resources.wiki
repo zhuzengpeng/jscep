@@ -24,4 +24,4 @@ As part of our [QualityAssurance QA] process, we would like to be able to schedu
 
 = Standards =
 
-  * http://tools.ietf.org/html/rfc2315
+  * [http://tools.ietf.org/html/rfc2315 PKCS #7]
