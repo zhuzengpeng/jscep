@@ -117,13 +117,13 @@ config.setCaId(caId);
 
 == Building ==
 
-Once you've finished specifying arguments, just call the `createClent` method on the `ClientFactory`, and a newly-configured `Client` is all yours:
+Once you've finished specifying arguments, pass the `ClientConfiguration` into the `Client` constructor:
 
 {{{
-Client client = ClientFactory.createClient(config);
+Client client = new Client(config);
 }}}
 
-The builder will throw an [http://java.sun.com/javase/6/docs/api/java/lang/IllegalStateException.html IllegalStateException] if you fail to comply with the above rules.
+The constructor will throw an [http://java.sun.com/javase/6/docs/api/java/lang/IllegalStateException.html IllegalStateException] if you fail to comply with the above rules.
 
 = Simple Example =
 
@@ -137,12 +137,11 @@ URL url = new URL("http://www.example.org/scep/pkiclient.exe");
 // Specify the CA digest
 byte[] digest = getDigest();
 
-ClientConfiguration config = new ClientConfiguration();
-config.setUrl(url);
+ClientConfiguration config = new ClientConfiguration(url);
 config.setCaDigest(digest);
 config.setSubject(subject);
 // Create a new client.  We'll use a generated key pair
-Client client = ClientFactory.createClient(config);
+Client client = new Client(config);
 // Send the enrollment request using our secret password
 EnrollmentResult result = client.enroll("password".toCharArray()); 
 // Automatic enrollments will NEVER be pending
@@ -169,12 +168,11 @@ URL url = new URL("http://www.example.org/scep/pkiclient.exe");
 byte[] digest = getDigest();
 
 // Create our new client
-ClientConfiguration config = new ClientConfiguration();
-config.setUrl(url);
+ClientConfiguration config = new ClientConfiguration(url);
 config.setCaDigest(digest);
 config.setIdentity(identity);
 config.setKeyPair(keyPair);
-Client client = ClientFactory.createClient(config);
+Client client = new Client(config);
 // Send the enrollment request using our secret password
 EnrollmentResult result = client.enroll("password".toCharArray()); 
 // Again, automatic enrollment is NEVER pending
@@ -199,11 +197,10 @@ URL url = new URL("http://www.example.org/scep/pkiclient.exe");
 byte[] digest = getDigest();
 
 // Create a new client.  We'll use a generated key pair
-ClientConfiguration config = new ClientConfiguration();
-config.setUrl(url);
+ClientConfiguration config = new ClientConfiguration(url);
 config.setCaDigest(digest);
 config.setSubject(subject);
-Client client = ClientFactory.createClient(config);
+Client client = new Client(config);
 // Send the enrollment request using our secret password
 EnrollmentResult result = client.enroll("password".toCharArray());
 // We fully expect our response to be pending...
