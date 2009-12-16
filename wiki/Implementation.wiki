@@ -49,7 +49,7 @@ config.setCaDigest(digest);
 If the digest isn't an `MD5` hash, you must specify the algorithm you've used, which must be one of `MD5`, `SHA-1`, `SHA-256` or `SHA-512`:
 
 {{{
-config.setDigestAlgorithm("SHA-1");
+config.setCaDigest(digest, "SHA-1");
 }}}
 
 If you provide a CA certificate and a digest algorithm, the SCEP client will use the algorithm you have requested when it does its own internal calculations.
