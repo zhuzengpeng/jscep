@@ -16,8 +16,20 @@ This section shows how to create a SCEP client.
 As a minimum, each client must be able to locate the SCEP server:
 
 {{{
-ClientConfiguration config = new ClientConfiguration(new URL("http://www.example.org/scep/pkiclient.exe"));
+URL url = new URL("http://www.example.org/scep/pkiclient.exe");
+ClientConfiguration config = new ClientConfiguration(url);
 }}}
+
+=== Proxy Server ===
+
+If you need to go through a proxy server to make HTTP requests, you will need to tell jSCEP the location of your proxy:
+
+{{{
+Proxy proxy = getProxy();
+ClientConfiguration config = new ClientConfiguration(url, proxy);
+}}}
+
+If you don't provide a proxy, jSCEP will default to using [http://java.sun.com/javase/6/docs/api/java/net/Proxy.html#NO_PROXY Proxy.NO_PROXY].
 
 === Technical Note on Validating URLs ===
 
@@ -102,17 +114,6 @@ If your SCEP server provides multiple CA certificates, you might need to provide
 String caId = "myCA";
 config.setCaId(caId);
 }}}
-
-== Proxy Server ==
-
-If you need to go through a proxy server to make HTTP requests, you will need to tell jSCEP the location of your proxy:
-
-{{{
-Proxy proxy = getProxy();
-config.setProxy(proxy);
-}}}
-
-If you don't provide a proxy, jSCEP will default to using [http://java.sun.com/javase/6/docs/api/java/net/Proxy.html#NO_PROXY Proxy.NO_PROXY].
 
 == Building ==
 
