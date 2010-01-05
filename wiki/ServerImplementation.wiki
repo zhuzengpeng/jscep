@@ -3,4 +3,4 @@
 
 = Requirements =
 
-Servlet Container
+Servlet Container (tested with [http://jetty.codehaus.org/jetty/ Jetty])
