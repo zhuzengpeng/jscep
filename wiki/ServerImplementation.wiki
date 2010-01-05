@@ -5,4 +5,4 @@
 
 Servlet Container (tested with [http://jetty.codehaus.org/jetty/ Jetty])
 
-Extend com.google.code.jscep.ScepServlet
+Extend com.google.code.jscep.!ScepServlet
