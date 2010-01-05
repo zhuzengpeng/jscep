@@ -3,6 +3,8 @@
 
 = Requirements =
 
+jSCEP provides an abstract servlet to eliminate the SCEP-specific parts, leaving only the PKI operations to be implemented.
+
 Servlet Container (tested with [http://jetty.codehaus.org/jetty/ Jetty])
 
 Extend com.google.code.jscep.!ScepServlet
