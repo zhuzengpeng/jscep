@@ -10,4 +10,4 @@ This wiki page details outstanding tasks that need to be completed before this p
   * Write a test harness to test against SCEP server implementations
   * Increase code coverage
   * Handle !GetCertInitial
-  * Eliminate dependency on bcmail.jar
+  * -Eliminate dependency on bcmail.jar-
