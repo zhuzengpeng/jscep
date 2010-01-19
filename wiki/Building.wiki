@@ -18,15 +18,3 @@ mvn clean install
 # Create the various packages
 mvn package
 }}}
-
-= Build Source Package =
-
-{{{
-mvn source:jar
-}}}
-
-= Build Javadoc Package =
-
-{{{
-mvn javadoc:jar
-}}}
