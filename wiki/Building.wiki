@@ -1,6 +1,8 @@
 #summary How to build jSCEP
 #labels Phase-Implementation
 
+jSCEP uses Apache Maven to manage its build process.
+
 = Download the Source =
 
 {{{
