@@ -11,6 +11,7 @@ cd jscep-read-only
 = Build Package =
 
 {{{
+mvn clean install
 mvn package
 }}}
 
