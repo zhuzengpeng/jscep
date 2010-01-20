@@ -1,7 +1,7 @@
 #summary How to build jSCEP
 #labels Phase-Implementation
 
-jSCEP uses [http://maven.apache.org/ Apache Maven] to manage its build process.  There is nothing special in the build process, and the project only uses the default Maven targets.
+jSCEP uses [http://maven.apache.org/ Maven] to manage its build process.  There is nothing special in the build process, and the project only uses the default Maven targets.
 
 = Download the Source =
 
