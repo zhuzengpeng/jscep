@@ -1,5 +1,5 @@
 <Module> 
-  <ModulePrefs author_email="david@grant.org.uk" author="Dave Grant" author_link="http://code.google.com/p/jscep" description="jSCEP Adverts" height="90" title="Adsense" title_url="http://www.google.com/adsense"/> 
+  <ModulePrefs author_email="david@grant.org.uk" author="Dave Grant" author_link="http://code.google.com/p/jscep" description="jSCEP Adverts" height="90" title="Adsense" title_url="http://www.google.com/adsense" width="728"/> 
   <Content type="html"> 
   	<![CDATA[
 		<script type="text/javascript">
