@@ -3,16 +3,14 @@
 
 jSCEP uses [http://maven.apache.org/ Maven] for software project management.
 
-There is nothing special in the build process, and the project only uses the default Maven targets.
-
-= Download the Source =
+= Downloading the Source =
 
 {{{
 svn checkout http://jscep.googlecode.com/svn/trunk/ jscep-read-only
 cd jscep-read-only
 }}}
 
-= Build Package =
+= Building the Package =
 
 {{{
 # Install dependencies
