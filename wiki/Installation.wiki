@@ -26,3 +26,7 @@ Using jSCEP is *easy*:
   * add the jSCEP and bcprov.jar to your classpath
 
 See SecurityManagerRequirements
+
+== Logging ==
+
+jSCEP uses the Java Logging API for logging and has quite extensive log messages.
