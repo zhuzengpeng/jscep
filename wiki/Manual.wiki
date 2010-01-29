@@ -1,0 +1,6 @@
+#summary Manual
+#labels Phase-Support
+
+= Introduction =
+
+This is the beginning of the manual.
