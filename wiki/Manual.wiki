@@ -3,6 +3,4 @@
 
 = Introduction =
 
-This is the beginning of the manual.
-
-[http://code.google.com/p/jscep/w/list Home]
+This page is the beginning of the creation of ordered user documentation.
