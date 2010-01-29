@@ -1,2 +1,0 @@
-#labels Phase-Support
-jSCEP uses [http://java.sun.com/javase/6/docs/technotes/guides/logging/index.html Java Logging] for its logging.
