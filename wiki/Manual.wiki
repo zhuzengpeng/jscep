@@ -3,4 +3,4 @@
 
 = Introduction =
 
-This page is the beginning of the creation of ordered user documentation.
+This page will be used to capture the requirements of jSCEP documentation from a user's point of view.
