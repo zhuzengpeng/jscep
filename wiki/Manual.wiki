@@ -11,6 +11,12 @@ This page will be used to capture the requirements of *all* jSCEP documentation 
 
 *api*, *client* & *server*
 
+== Installation Alternatives ==
+
+ # Download a pre-built JAR
+ # Build from Subversion
+ # Maven
+
 == References ==
 
 References to the [http://jscep.googlecode.com/svn/trunk/api/target/site/apidocs/index.html API] should be made where possible.
