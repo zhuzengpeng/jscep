@@ -24,7 +24,7 @@ As part of our [QualityAssurance QA] process, we would like to be able to schedu
 
 = Clients =
 
-|| Implementation || Language ||
+|| *Implementation* || *Language* ||
 || [http://www.urut.ch/scep/ Java SCEP] || Java ||
 || [http://www.klake.org/~jt/sscep/ SSCEP] || C ||
 || [http://openscep.othello.ch/ OpenSCEP] || C ||
