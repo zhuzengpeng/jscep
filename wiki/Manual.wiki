@@ -13,8 +13,8 @@ This page will be used to capture the requirements of *all* jSCEP documentation 
 
 == Installation Alternatives ==
 
- # Download a pre-built JAR
- # Build from Subversion
+ # Binary [/p/jscep/downloads/list Download]
+ # Build from [/p/jscep/source/checkout Subversion]
  # Maven
 
 == References ==
