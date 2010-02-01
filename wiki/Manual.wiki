@@ -7,6 +7,10 @@
 
 This page will be used to capture the requirements of *all* jSCEP documentation from a user's point of view.
 
+== Helping ==
+
+Provide feedback through [http://code.google.com/p/jscep/issues/list issues] or contributing on the [MailingLists mailing lists].
+
 == Project Directories ==
 
 *api*, *client* & *server*
