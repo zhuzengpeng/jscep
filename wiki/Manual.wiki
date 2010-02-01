@@ -15,6 +15,12 @@ Provide feedback through raising [http://code.google.com/p/jscep/issues/list iss
 
 *api*, *client* & *server*
 
+== Requirements ==
+
+ * [http://java.sun.com/javase/downloads/index.jsp Java 5] 
+ * [http://www.bouncycastle.org/latest_releases.html Bouncy Castle Provider]
+ * [http://commons.apache.org/codec/ Commons Codec]
+
 == Installation Alternatives ==
 
  # Binary [http://code.google.com/p/jscep/downloads/list Download]
