@@ -27,6 +27,7 @@ As part of our [QualityAssurance QA] process, we would like to be able to schedu
   * [http://www.urut.ch/scep/ Java SCEP]
   * [http://www.klake.org/~jt/sscep/ SSCEP]
   * [http://openscep.othello.ch/ OpenSCEP]
+  * [http://www.cynops.de/oss/CertNanny/ CertNanny]
   
 
 = Standards =
