@@ -25,7 +25,7 @@ Provide feedback through raising [http://code.google.com/p/jscep/issues/list iss
 
  # Binary [http://code.google.com/p/jscep/downloads/list Download]
  # Build from [http://code.google.com/p/jscep/source/checkout Subversion]
- # Maven
+ # Maven (*not supported*)
 
 == Quick Tour ==
 
