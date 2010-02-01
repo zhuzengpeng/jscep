@@ -9,7 +9,7 @@ This page will be used to capture the requirements of *all* jSCEP documentation 
 
 == Helping ==
 
-Provide feedback through raising [http://code.google.com/p/jscep/issues/list issues], contributing on the [MailingLists mailing lists] or contributing code.
+Provide feedback through raising [http://code.google.com/p/jscep/issues/list issues], contributing on the [MailingLists mailing lists], contributing code or writing documentation.
 
 == Project Directories ==
 
