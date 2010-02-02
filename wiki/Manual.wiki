@@ -3,9 +3,7 @@
 
 <wiki:toc/>
 
-= Installation and Getting Started =
-
-== Introduction ==
+= Introduction =
 
 This page will be used to capture the requirements of *all* jSCEP documentation from a user's point of view.
 
@@ -23,17 +21,17 @@ Provide feedback through raising [http://code.google.com/p/jscep/issues/list iss
  * [http://www.bouncycastle.org/latest_releases.html Bouncy Castle Provider]
  * [http://commons.apache.org/codec/ Commons Codec]
 
-== Installation Alternatives ==
+== Getting jSCEP ==
 
  # Binary [http://code.google.com/p/jscep/downloads/list Download]
  # Build from [http://code.google.com/p/jscep/source/checkout Subversion]
  # Maven (*not supported*)
 
-=== Binary ==
+=== Binary Packages ==
 
 See the [http://code.google.com/p/jscep/downloads/list Downloads] tab
 
-=== Building from Source ==
+=== Source Code ==
 
 ==== Prerequisites ====
 
