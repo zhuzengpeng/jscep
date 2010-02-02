@@ -49,3 +49,5 @@ Features of SCEP
 == References ==
 
 References to the [http://jscep.googlecode.com/svn/trunk/api/target/site/apidocs/index.html API] should be made where possible.
+
+== Examples of Good Open Source Documentation ==
