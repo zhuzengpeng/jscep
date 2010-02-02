@@ -33,10 +33,12 @@ See the [http://code.google.com/p/jscep/downloads/list Downloads] tab
 
 === Building from Source ==
 
-Prerequisites
+==== Prerequisites ====
 
- * Subversion
- * Apache Maven
+To build, jSCEP from source, you will need the following tools:
+
+ * [http://subversion.apache.org/ Subversion]
+ * [http://maven.apache.org/ Apache Maven]
 
 {{{
 user@host:~$ svn checkout http://jscep.googlecode.com/svn/trunk/ jscep-read-only
