@@ -33,6 +33,12 @@ See the [http://code.google.com/p/jscep/downloads/list Downloads] tab
 
 === Building from Source ==
 
+{{{
+user@host:~$ svn checkout http://jscep.googlecode.com/svn/trunk/ jscep-read-only
+user@host:~$ cd jscep-read-only
+user@host:~/jscep-read-only$ mvn install build
+}}}
+
  * Checkout
  * `mvn install build`
 
