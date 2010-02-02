@@ -27,11 +27,11 @@ Provide feedback through raising [http://code.google.com/p/jscep/issues/list iss
  # Build from [http://code.google.com/p/jscep/source/checkout Subversion]
  # Maven (*not supported*)
 
-=== Binary Packages ==
+== Binary Packages ==
 
 See the [http://code.google.com/p/jscep/downloads/list Downloads] tab
 
-=== Source Code ==
+== Source Code ==
 
 ==== Prerequisites ====
 
