@@ -68,6 +68,16 @@ Features of SCEP
 
 == Getting Involved ==
 
+=== File an Issue ===
+
+=== Write a Test ===
+
+Especially if you have access to a SCEP-capable server.
+
+=== Submit a Patch ===
+
+=== Become a Committer ==
+
 == References ==
 
 References to the [http://jscep.googlecode.com/svn/trunk/api/target/site/apidocs/index.html API] should be made where possible.
