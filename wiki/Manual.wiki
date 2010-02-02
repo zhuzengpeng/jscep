@@ -52,4 +52,4 @@ References to the [http://jscep.googlecode.com/svn/trunk/api/target/site/apidocs
 
 == Examples of Good Open Source Documentation ==
 
-http://www.oss-watch.ac.uk/resources/documentation.xml
+ * http://www.oss-watch.ac.uk/resources/documentation.xml
