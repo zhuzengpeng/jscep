@@ -27,6 +27,11 @@ Provide feedback through raising [http://code.google.com/p/jscep/issues/list iss
  # Build from [http://code.google.com/p/jscep/source/checkout Subversion]
  # Maven (*not supported*)
 
+=== Building from Source ==
+
+ * Checkout
+ * `mvn install build`
+
 == Quick Tour ==
 
 Features of SCEP
