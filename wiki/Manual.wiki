@@ -1,6 +1,8 @@
 #summary The jSCEP Manual
 #labels Phase-Support
 
+<wiki:toc max_depth="1" />
+
 = Installation and Getting Started =
 
 == Introduction ==
@@ -55,6 +57,12 @@ Features of SCEP
  * Certificate Access
  * CRL Access
  * Certificate Enrollment
+
+== Community ==
+
+=== Mailing Lists ===
+
+=== Getting Involved ===
 
 == Road Map ==
 
