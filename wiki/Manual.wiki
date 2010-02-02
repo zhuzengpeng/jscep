@@ -35,6 +35,8 @@ See the [http://code.google.com/p/jscep/downloads/list Downloads] tab
 
 == Source Code ==
 
+We should offer source code packages.  See issue 8.
+
 === Prerequisites ===
 
 To build, jSCEP from source, you'll need the following tools:
