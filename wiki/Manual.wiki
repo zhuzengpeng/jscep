@@ -54,6 +54,8 @@ The above commands will check out the source code from the jSCEP subversion repo
 
 == Quick Tour ==
 
+This should be on the front page...
+
 Features of SCEP
 
  * Certificate Access
