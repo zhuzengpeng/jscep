@@ -21,7 +21,7 @@ Provide feedback through raising [http://code.google.com/p/jscep/issues/list iss
  * [http://www.bouncycastle.org/latest_releases.html Bouncy Castle Provider]
  * [http://commons.apache.org/codec/ Commons Codec]
 
-== Getting jSCEP ==
+= Getting jSCEP =
 
  # Binary [http://code.google.com/p/jscep/downloads/list Download]
  # Build from [http://code.google.com/p/jscep/source/checkout Subversion]
@@ -56,11 +56,11 @@ Features of SCEP
  * CRL Access
  * Certificate Enrollment
 
-== Community ==
+= Community =
 
-=== Mailing Lists ===
+== Mailing Lists ==
 
-=== Getting Involved ===
+== Getting Involved ==
 
 == Road Map ==
 
