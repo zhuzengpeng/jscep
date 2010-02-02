@@ -1,7 +1,7 @@
 #summary The jSCEP Manual
 #labels Phase-Support
 
-<wiki:toc max_depth="1" />
+<wiki:toc/>
 
 = Installation and Getting Started =
 
