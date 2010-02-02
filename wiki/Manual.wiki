@@ -33,14 +33,18 @@ See the [http://code.google.com/p/jscep/downloads/list Downloads] tab
 
 === Building from Source ==
 
+Prerequisites
+
+ * Subversion
+ * Apache Maven
+
 {{{
 user@host:~$ svn checkout http://jscep.googlecode.com/svn/trunk/ jscep-read-only
 user@host:~$ cd jscep-read-only
-user@host:~/jscep-read-only$ mvn install build
+user@host:~/jscep-read-only$ mvn install
 }}}
 
- * Checkout
- * `mvn install build`
+The above commands will check out the source code from the jSCEP subversion repository, followed by building each of the project artefacts and installing them into your local Maven repository.
 
 == Quick Tour ==
 
