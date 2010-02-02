@@ -21,6 +21,8 @@ Provide feedback through raising [http://code.google.com/p/jscep/issues/list iss
  * [http://www.bouncycastle.org/latest_releases.html Bouncy Castle Provider]
  * [http://commons.apache.org/codec/ Commons Codec]
 
+== Roadmap ==
+
 = Getting jSCEP =
 
  # Binary [http://code.google.com/p/jscep/downloads/list Download]
@@ -61,8 +63,6 @@ Features of SCEP
 == Mailing Lists ==
 
 == Getting Involved ==
-
-== Road Map ==
 
 == References ==
 
