@@ -1,4 +1,3 @@
-#summary The jSCEP Manual
 #labels Phase-Support
 #sidebar TableOfContents
 
