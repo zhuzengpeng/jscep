@@ -1,6 +1,8 @@
 #summary What permissions are required?
 #labels Phase-Deploy
 
+*This should be moved to become part of the [Manual manual]*
+
 = Introduction =
 
 This page lists the policy that must be granted to jSCEP by the application [http://java.sun.com/javase/6/docs/api/java/lang/SecurityManager.html SecurityManager].
