@@ -1,7 +1,5 @@
 #sidebar TableOfContents
 
- Note
-
  This page is for discussing how to add jSCEP to your own project using Maven.  For details     
  on how to _build_ jSCEP using Maven, see the [SourceCode source code] page.
 
