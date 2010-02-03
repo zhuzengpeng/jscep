@@ -37,9 +37,9 @@ You can use jSCEP by compiling the source, or by downloading one of the [http://
 
 === Source Packages ===
 
-We should offer source code packages.  See issue 8.
+We ~should~ offer source code packages.  See ~issue 8~ [http://code.google.com/p/jscep/downloads/list?q=*sources.jar here]: 
 
-=== Building from Source
+=== Building from Source ===
 
 ==== Prerequisites ====
 
