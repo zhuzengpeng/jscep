@@ -1,5 +1,5 @@
  * About jSCEP
-   * [Manual Documentation]
+   * [Manual Manual]
  * Getting jSCEP
    * [Packages Binary Packages]
    * [SourceCode Source Code]
