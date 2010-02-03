@@ -1,3 +1,5 @@
+#sidebar TableOfContents
+
 = Using Maven =
 
 There is currently no support for downloading jSCEP using Maven.
