@@ -16,7 +16,9 @@ See [Installation]
 
 == Logging ==
 
-Uses Java Logging.
+Uses Java Logging.  All packages start with
+
+`com.google.code.jscep`
 
 == Security ==
 
