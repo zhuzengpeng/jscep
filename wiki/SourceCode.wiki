@@ -1,7 +1,3 @@
-#sidebar TableOfContents
-
-= Source Code =
-
 You can use jSCEP by compiling the source, or by downloading one of the [http://code.google.com/p/jscep/downloads/list pre-compiled JARs].
 
 == Source Packages ==
