@@ -10,6 +10,10 @@ This page will be used to capture the requirements of *all* jSCEP documentation 
  * [Implementation Client Implementation]
  * [ServerImplementation Server Implementation]
 
+== Installing ==
+
+See [Installation]
+
 == Logging ==
 
 Uses Java Logging.
