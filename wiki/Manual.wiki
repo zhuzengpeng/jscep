@@ -13,14 +13,6 @@ This page will be used to capture the requirements of *all* jSCEP documentation 
  * client
  * server
 
-== Roadmap ==
-
-= Getting jSCEP =
-
- # Binary [http://code.google.com/p/jscep/downloads/list Download]
- # Build from [http://code.google.com/p/jscep/source/checkout Subversion]
- # Maven (*not supported at the moment*)
-
 == Quick Tour ==
 
 This should be on the front page...
