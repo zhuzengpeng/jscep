@@ -1,6 +1,7 @@
  * About jSCEP
    * [Requirements Requirements]
    * [Manual Manual]
+   * [Roadmap Roadmap]
  * Getting jSCEP
    * [Packages Binary Packages]
    * [SourceCode Source Code]
