@@ -1,6 +1,8 @@
 #summary How to use jSCEP in your own application
 #labels Phase-Implementation,Featured
 
+*This should be moved to be part of the [Manual manual]*
+
 <wiki:toc/>
 
 = Introduction =
