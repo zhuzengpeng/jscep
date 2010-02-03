@@ -1,10 +1,4 @@
-#summary SCEP Resources
 #labels Phase-Support
-
-= Introduction =
-
-This page discusses SCEP resources on the Internet.
-
 = Mailing Lists =
 
   * [http://www.vpnc.org/scep/ VPN Consortium]
