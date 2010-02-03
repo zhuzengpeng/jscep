@@ -9,3 +9,4 @@
  * Community
    * [MailingLists Mailing Lists]
    * [GettingInvolved Getting Involved]
+   * [Resources Resources]
