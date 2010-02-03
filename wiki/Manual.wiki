@@ -28,43 +28,6 @@ This page will be used to capture the requirements of *all* jSCEP documentation 
  # Build from [http://code.google.com/p/jscep/source/checkout Subversion]
  # Maven (*not supported at the moment*)
 
-== Binary Packages ==
-
-This is the simplest way to try out jSCEP.  Here's a list of the [http://code.google.com/p/jscep/downloads/list?type=Library current binary packages] available for download.
-
-== Source Code ==
-
-You can use jSCEP by compiling the source, or by downloading one of the [http://code.google.com/p/jscep/downloads/list pre-compiled JARs].
-
-=== Source Packages ===
-
-We ~~should~~ now offer source code packages.  See ~~issue 8~~ [http://code.google.com/p/jscep/downloads/list?q=*sources.jar here]: 
-
-=== Building from Source ===
-
-==== Prerequisites ====
-
-To build, jSCEP from source, you'll need the following tools:
-
- * [http://subversion.apache.org/ Subversion]
- * [http://maven.apache.org/ Apache Maven]
-
-==== Getting the Source Code ====
-
-You can checkout the trunk (what about other [Branches branches]?) by running the following commands on your command-line:
-
-{{{
-user@host:~$ svn checkout http://jscep.googlecode.com/svn/trunk/ jscep-read-only
-user@host:~$ cd jscep-read-only
-user@host:~/jscep-read-only$ mvn install
-}}}
-
-This will check out the source code from the jSCEP subversion repository, followed by building each of the project artefacts and installing them into your local Maven repository.
-
-=== Browsing the Source ===
-
-If you'd like to view the source code without downloading a source package or using subversion, you can do so by [http://code.google.com/p/jscep/source/browse/ browsing the repository] using the Google Code viewer, or by using the subversion [http://jscep.googlecode.com/svn/ web interface].
-
 == Quick Tour ==
 
 This should be on the front page...
