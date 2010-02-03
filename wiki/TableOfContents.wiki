@@ -1,7 +1,7 @@
  * About jSCEP
    * [Manual Documentation]
  * Getting jSCEP
-   * [Packages Packages]
+   * [Packages Binary Packages]
    * [SourceCode Source Code]
  * Community
    * [MailingLists Mailing Lists]
