@@ -1,7 +1,5 @@
-#summary How to integrate with the SCEP servlet.
 #labels Phase-Implementation
-
-= Requirements =
+*This should be moved to become part of the [Manual manual]*
 
 jSCEP provides an abstract servlet to eliminate the SCEP-specific parts, leaving only the PKI operations to be implemented.
 
