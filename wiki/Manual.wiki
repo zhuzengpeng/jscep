@@ -29,15 +29,6 @@ Features of SCEP
 
 == Getting Involved ==
 
-=== File an Issue ===
-
-=== Write a Test ===
-
-Especially if you have access to a SCEP-capable server.  It would be good to provide a simple tool to allow adopters to test out jSCEP against their particular server.
-
-=== Submit a Patch ===
-
-=== Become a Committer ==
 
 == References ==
 
