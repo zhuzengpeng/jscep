@@ -1,8 +1,0 @@
-#labels Phase-Support,Featured
-= Getting Help =
-
-If you have any queries about jSCEP, please post a message to the [http://groups.google.com/group/jscep-support jscep-support] mailing list.
-
-= Reporting Problems =
-
-If you find a problem in jSCEP, please [http://code.google.com/p/jscep/issues/entry create a new issue], attaching [Logging log output].
