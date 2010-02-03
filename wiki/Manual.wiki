@@ -25,7 +25,7 @@ This page will be used to capture the requirements of *all* jSCEP documentation 
 
  # Binary [http://code.google.com/p/jscep/downloads/list Download]
  # Build from [http://code.google.com/p/jscep/source/checkout Subversion]
- # Maven (*not supported*)
+ # Maven (*not supported at the moment*)
 
 == Binary Packages ==
 
