@@ -56,6 +56,10 @@ user@host:~/jscep-read-only$ mvn install
 
 The above commands will check out the source code from the jSCEP subversion repository, followed by building each of the project artefacts and installing them into your local Maven repository.
 
+=== Browsing the Source ===
+
+If you don't have subversion, but you'd like to view the source, you can do so by [http://code.google.com/p/jscep/source/browse/ browsing the repository].
+
 == Quick Tour ==
 
 This should be on the front page...
