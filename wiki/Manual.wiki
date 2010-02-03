@@ -48,13 +48,17 @@ To build, jSCEP from source, you'll need the following tools:
  * [http://subversion.apache.org/ Subversion]
  * [http://maven.apache.org/ Apache Maven]
 
+==== Getting the Source Code ====
+
+You can checkout the trunk (what about other [Branches branches]?) by running the following commands on your command-line:
+
 {{{
 user@host:~$ svn checkout http://jscep.googlecode.com/svn/trunk/ jscep-read-only
 user@host:~$ cd jscep-read-only
 user@host:~/jscep-read-only$ mvn install
 }}}
 
-The above commands will check out the source code from the jSCEP subversion repository, followed by building each of the project artefacts and installing them into your local Maven repository.
+This will check out the source code from the jSCEP subversion repository, followed by building each of the project artefacts and installing them into your local Maven repository.
 
 === Browsing the Source ===
 
