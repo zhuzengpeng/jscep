@@ -29,7 +29,7 @@ This page will be used to capture the requirements of *all* jSCEP documentation 
 
 == Binary Packages ==
 
-See the [http://code.google.com/p/jscep/downloads/list Downloads] tab
+This is the simplest way to try out jSCEP.  Here's a list of the [http://code.google.com/p/jscep/downloads/list?type=Library current binary packages] available for download.
 
 == Source Code ==
 
