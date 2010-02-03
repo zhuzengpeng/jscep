@@ -62,7 +62,7 @@ This will check out the source code from the jSCEP subversion repository, follow
 
 === Browsing the Source ===
 
-If you don't have subversion, but you'd like to view the source, you can do so by [http://code.google.com/p/jscep/source/browse/ browsing the repository] using the Google Code viewer, or by using the subversion [http://jscep.googlecode.com/svn/ web interface].
+If you'd like to view the source code without downloading a source package or using subversion, you can do so by [http://code.google.com/p/jscep/source/browse/ browsing the repository] using the Google Code viewer, or by using the subversion [http://jscep.googlecode.com/svn/ web interface].
 
 == Quick Tour ==
 
