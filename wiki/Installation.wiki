@@ -1,6 +1,8 @@
 #summary How to add jSCEP to your own application.
 #labels Phase-Deploy,Featured
 
+*This should be moved to be part of the [Manual manual].*
+
 = Introduction =
 
 This page describes how to add jSCEP to your own application.
