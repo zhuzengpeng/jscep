@@ -18,6 +18,10 @@ See [Installation]
 
 Uses Java Logging.
 
+== Security ==
+
+See [SecurityManagerRequirements]
+
 == Examples of Good Open Source Documentation ==
 
  * http://www.oss-watch.ac.uk/resources/documentation.xml
