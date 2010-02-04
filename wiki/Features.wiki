@@ -55,11 +55,11 @@ Retrieve the certificate used by the CA.  Need to know what to expect:
 
 GetNextCACert
 
+*This is currently broken.*
+
 == Certificate Access ==
 
 Retrieve a previously-signed certificate by issuer and serial number
-
-!GetCert
 
 == CRL Access ==
 
