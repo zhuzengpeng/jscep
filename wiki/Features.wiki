@@ -8,7 +8,7 @@ Supports CA identifiers for SCEP servers supporting multiple CAs.
 
 == Discover CA Capabilities ==
 
-*Need to be careful that we don't the feature that the capability enables*.
+*Need to be careful that we don't describe the feature that the capability enables*.
 
 === Rollover Certificates ===
 
