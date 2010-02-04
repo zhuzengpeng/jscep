@@ -1,3 +1,5 @@
-#sidebar TableOfContents
-
 In terms of the API, the roadmap is pretty much governed by changes to the SCEP internet draft.
+
+== Features to Add ==
+
+Add CRL Distribution Points
