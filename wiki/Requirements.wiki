@@ -3,7 +3,3 @@
  * [http://java.sun.com/javase/downloads/index.jsp Java 5] 
  * [http://www.bouncycastle.org/latest_releases.html Bouncy Castle Provider]
  * [http://commons.apache.org/codec/ Commons Codec]
-
-----
-
-<wiki:gadget url="http://jscep.googlecode.com/svn/wiki/adsense.xml?v=0" border="0" width="728" height="90">

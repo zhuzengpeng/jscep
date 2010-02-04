@@ -2,7 +2,3 @@
  on how to _build_ jSCEP using Maven, see the [SourceCode source code] page.
 
 There is currently no support for downloading jSCEP using Maven.  If we can get the artefact hosted, this will change.
-
-----
-
-<wiki:gadget url="http://jscep.googlecode.com/svn/wiki/adsense.xml?v=0" border="0" width="728" height="90">

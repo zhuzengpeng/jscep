@@ -27,7 +27,3 @@ See [SecurityManagerRequirements]
 == Examples of Good Open Source Documentation ==
 
  * http://www.oss-watch.ac.uk/resources/documentation.xml
-
-----
-
-<wiki:gadget url="http://jscep.googlecode.com/svn/wiki/adsense.xml?v=0" border="0" width="728" height="90">

@@ -215,7 +215,3 @@ while (result.getStatus() == PkiStatus.PENDING) {
     wait *= 2;
 }
 }}}
-
-----
-
-<wiki:gadget url="http://jscep.googlecode.com/svn/wiki/adsense.xml?v=0" border="0" width="728" height="90">
