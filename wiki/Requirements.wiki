@@ -1,10 +1,11 @@
 #sidebar TableOfContents
 
- * [http://java.sun.com/javase/downloads/index.jsp Java 5] 
- * [http://www.bouncycastle.org/latest_releases.html Bouncy Castle Provider]
+In addition to [http://java.sun.com/javase/downloads/index.jsp Java], you will need the following libraries to use jSCEP:
+
+*[http://www.bouncycastle.org/latest_releases.html Bouncy Castle Provider]*
 
 This is used for ASN.1
 
- * [http://commons.apache.org/codec/ Commons Codec]
+*[http://commons.apache.org/codec/ Commons Codec]*
 
 This is used for Hex and Base64 encoding and decoding.
