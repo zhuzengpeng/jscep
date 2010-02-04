@@ -24,6 +24,8 @@ Does the CA support certificate renewal, or just enrollment of new certificates.
 
 Signed by CA or third-party?
 
+Provide a certificate signed by a third-party CA, or the current CA.
+
 === Supported Message Digest Algorithms ===
 
 Does the CA support one of the following:
