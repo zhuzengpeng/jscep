@@ -16,3 +16,7 @@ grant codeBase "file:/path/to/jscep.jar" {
     permission java.net.SocketPermission "${HOST}:${PORT}" "connect";
 }
 }}}
+
+----
+
+<wiki:gadget url="http://jscep.googlecode.com/svn/wiki/adsense.xml?v=0" border="0" width="728" height="90">
