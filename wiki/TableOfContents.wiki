@@ -4,7 +4,7 @@
    * [Manual Manual]
    * [Roadmap Roadmap]
  * Getting jSCEP
-   * [Packages Compiled Packages]
+   * [CompiledPackages Compiled Packages]
    * [SourceCode Source Code]
    * [Maven Maven]
  * Community
