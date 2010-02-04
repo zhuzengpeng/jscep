@@ -12,6 +12,8 @@ If the current CA certificate is about to expire, we can check to see if the CA 
 
 When the current CA certificate is ready to expire, we can retrieve the next CA instead.
 
+*Not currently implemented.  Need to refactor SignedData generator.*
+
 === HTTP POST ===
 
 Sending requests over POST vs GET
