@@ -1,6 +1,13 @@
  This page is for discussing how to add jSCEP to your own project using Maven.  For details     
  on how to _build_ jSCEP using Maven, see the [SourceCode source code] page.
 
-jSCEP should be available from the central Maven repository soon.  In the meantime, it is available from the [http://oss.repository.sonatype.org/content/repositories/releases/ Sonatype OSS repository].
+jSCEP is available from the Maven central repository.  The details are as follows:
+
+|| *groupId* || com.google.code.jscep ||
+|| *artifactId* || jscep, jscep-api, jscep-client or jscep-server ||
+|| *version* || 0.20.6 ||
+
+
+should be available from the central Maven repository soon.  In the meantime, it is available from the [http://oss.repository.sonatype.org/content/repositories/releases/ Sonatype OSS repository].
 
 [http://www.sonatype.com http://oss.sonatype.org/images/branding.png]
