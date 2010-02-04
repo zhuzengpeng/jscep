@@ -2,3 +2,5 @@
  on how to _build_ jSCEP using Maven, see the [SourceCode source code] page.
 
 There is currently no support for downloading jSCEP using Maven.  If we can get the artefact hosted, this will change.
+
+Available from Sonatype repository...
