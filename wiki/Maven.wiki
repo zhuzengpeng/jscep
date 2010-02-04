@@ -11,4 +11,4 @@ jSCEP is now available from the [http://repo1.maven.org/maven2/ Maven central re
 
 Maven repository hosting for jSCEP artifacts is provided by [http://nexus.sonatype.org/oss-repository-hosting.html Sonatype].
 
- [http://www.sonatype.com http://oss.sonatype.org/images/branding.png]
+[http://www.sonatype.com http://oss.sonatype.org/images/branding.png]
