@@ -8,7 +8,7 @@ GetCACaps
 
 GetCACert
 
- == Retrieve "Rollover" CA Certificate ==
+== Retrieve "Rollover" CA Certificate ==
 
 GetNextCACert
 
