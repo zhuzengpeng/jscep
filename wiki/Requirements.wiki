@@ -3,5 +3,3 @@
  * [http://java.sun.com/javase/downloads/index.jsp Java 5] 
  * [http://www.bouncycastle.org/latest_releases.html Bouncy Castle Provider]
  * [http://commons.apache.org/codec/ Commons Codec]
-
-We only use commons codec for Base64 encoding.  Might it be a good idea to not require this?
