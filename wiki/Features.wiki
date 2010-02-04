@@ -4,7 +4,7 @@ Informational Requests
 
  * Server Capabilities (GetCACaps)
  * Retrieve CA Certificate (GetCACert)
- * Retrieve Rollover CA Certificate (GetNextCACert)
+ * Retrieve "Rollover" CA Certificate (GetNextCACert)
 
 PKI Requests
 
