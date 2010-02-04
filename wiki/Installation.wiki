@@ -32,3 +32,7 @@ See SecurityManagerRequirements
 == Logging ==
 
 jSCEP uses the Java Logging API for logging and has quite extensive log messages.
+
+----
+
+<wiki:gadget url="http://jscep.googlecode.com/svn/wiki/adsense.xml?v=0" border="0" width="728" height="90">
