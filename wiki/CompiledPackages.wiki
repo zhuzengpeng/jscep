@@ -1,0 +1,1 @@
+This is the simplest way to try out jSCEP.  Here's a list of the [http://code.google.com/p/jscep/downloads/list?type=Library current compiled JARs] available for download.
