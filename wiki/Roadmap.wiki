@@ -3,3 +3,7 @@ In terms of the API, the roadmap is pretty much governed by changes to the [http
 == Features to Add ==
 
  * CRL Distribution Points
+
+----
+
+<wiki:gadget url="http://jscep.googlecode.com/svn/wiki/adsense.xml?v=0" border="0" width="728" height="90">
