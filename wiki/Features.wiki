@@ -1,16 +1,28 @@
 jSCEP aims to be fully compliant with the [http://tools.ietf.org/html/draft-nourse-scep latest SCEP Internet-Draft].  The following operations are supported in the current release:
 
-Informational Requests
+== SCEP Server Capabilities ==
 
- * Server Capabilities (GetCACaps)
- * Retrieve CA Certificate (GetCACert)
- * Retrieve "Rollover" CA Certificate (GetNextCACert)
+GetCACaps
 
-PKI Requests
+== Retrieve CA Certificate ==
 
- * Certificate Access (!GetCert and !GetCertInitial)
- * CRL Access (GetCRL)
- * Certificate Enrollment (PKCSReq)
+GetCACert
+
+ == Retrieve "Rollover" CA Certificate ==
+
+GetNextCACert
+
+== Certificate Access ==
+
+!GetCert and !GetCertInitial
+
+== CRL Access ==
+
+GetCRL
+
+== Certificate Enrollment ==
+
+PKCSReq
 
 The goal of the jSCEP project is simple: to produce a pure Java implementation of the SCEP protocol that complies with the [http://tools.ietf.org/html/draft-nourse-scep latest SCEP Internet-Draft], and is compatible with *any* compliant SCEP server implementation, including, but not limited to:
 
