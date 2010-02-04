@@ -6,9 +6,11 @@ Supports CA identifiers for SCEP servers supporting multiple CAs.
 
 == Discover CA Capabilities ==
 
-When the current CA certificate is ready to expire, we can retrieve the next CA instead.
+=== Rollover Certificates ===
 
-*Need to define "ready to expire"*.  Can this be added to a client?
+If the current CA certificate is about to expire, we can check to see if the CA has a certificate certified for _future_ use that we can use to sign our certificate.  This is available in the API, but there is no logic for use in the certificate.  Would be good to prompt user?
+
+When the current CA certificate is ready to expire, we can retrieve the next CA instead.
 
 === HTTP POST ===
 
