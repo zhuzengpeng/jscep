@@ -43,7 +43,11 @@ Does server support DES or Triple DES?  What is the strongest cipher supported b
 
 == Retrieve CA Certificate ==
 
-GetCACert
+Retrieve the certificate used by the CA.  Need to know what to expect:
+
+ * Fingerprint
+ * Certificate
+ * Truststore ?
 
 == Retrieve "Rollover" CA Certificate ==
 
