@@ -2,8 +2,8 @@
  * Retrieve CA Certificate (!GetCACert)
  * Retrieve Rollover CA Certificate (!GetNextCACert)
  * Certificate Access (!GetCert and !GetCertInitial)
- * CRL Access (!GetCRL)
- * Certificate Enrollment (!PKCSReq)
+ * CRL Access (GetCRL)
+ * Certificate Enrollment (PKCSReq)
 
 The goal of the jSCEP project is simple: to produce a pure Java implementation of the SCEP protocol that complies with the [http://tools.ietf.org/html/draft-nourse-scep latest SCEP Internet-Draft], and is compatible with *any* compliant SCEP server implementation, including, but not limited to:
 
