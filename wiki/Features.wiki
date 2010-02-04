@@ -1,8 +1,33 @@
 jSCEP aims to be fully compliant with the [http://tools.ietf.org/html/draft-nourse-scep latest SCEP Internet-Draft].  The following operations are supported in the current release:
 
-== Discover SCEP Server Capabilities ==
+== Discover CA Capabilities ==
 
-GetCACaps
+ * Support for "rollover" CA certificates
+
+=== HTTP POST ===
+
+Sending requests over POST vs GET
+
+=== Renewing Certificates ===
+
+Does the CA support certificate renewal, or just enrollment of new certificates.
+
+Signed by CA or third-party?
+
+=== Supported Message Digest Algorithms ===
+
+Does the CA support one of the following:
+
+ * MD5
+ * SHA-1
+ * SHA-256
+ * SHA-512
+
+What is the strongest algorithm it supports?
+
+=== Supported Cipher Algorithms ===
+
+Does server support DES or Triple DES?  What is the strongest cipher supported by the CA?
 
 == Retrieve CA Certificate ==
 
