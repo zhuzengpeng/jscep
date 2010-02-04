@@ -78,3 +78,7 @@ The goal of the jSCEP project is simple: to produce a pure Java implementation o
 
    * [http://ejbca.sourceforge.net/ EJBCA]
    * [http://www.openca.org/ OpenCA]
+
+----
+
+<wiki:gadget url="http://jscep.googlecode.com/svn/wiki/adsense.xml?v=0" border="0" width="728" height="90">
