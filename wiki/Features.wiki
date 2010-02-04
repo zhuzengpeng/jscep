@@ -6,7 +6,9 @@ Supports CA identifiers for SCEP servers supporting multiple CAs.
 
 == Discover CA Capabilities ==
 
- * Support for "rollover" CA certificates
+When the current CA certificate is ready to expire, we can retrieve the next CA instead.
+
+*Need to define "ready to expire"*.  Can this be added to a client?
 
 === HTTP POST ===
 
