@@ -6,7 +6,7 @@ jSCEP aims to be fully compliant with the [http://tools.ietf.org/html/draft-nour
 
 Supports CA identifiers for SCEP servers supporting multiple CAs.
 
-== Discover CA Capabilities ==
+== Determining CA Capabilities ==
 
 *Need to be careful that we don't describe the feature that the capability enables*.
 
