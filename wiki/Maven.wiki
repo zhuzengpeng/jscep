@@ -4,7 +4,7 @@
 jSCEP is available from the Maven central repository.  The details are as follows:
 
 || groupId || *com.google.code.jscep* ||
-|| artifactId || *jscep*, *jscep-api*, *jscep-client* or *jscep-server* ||
+|| artifactId || *jscep-api*, *jscep-client* or *jscep-server* ||
 || version || *0.20.6* ||
 
 
