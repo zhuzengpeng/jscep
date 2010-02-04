@@ -10,3 +10,7 @@ Especially if you have access to a SCEP-capable server.  It would be good to pro
 == Submit a Patch ==
 
 == Become a Committer ==
+
+----
+
+<wiki:gadget url="http://jscep.googlecode.com/svn/wiki/adsense.xml?v=0" border="0" width="728" height="90">
