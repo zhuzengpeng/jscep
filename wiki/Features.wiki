@@ -1,5 +1,9 @@
 jSCEP aims to be fully compliant with the [http://tools.ietf.org/html/draft-nourse-scep latest SCEP Internet-Draft].  The following operations are supported in the current release:
 
+== CA Profiles ==
+
+Supports CA identifiers for SCEP servers supporting multiple CAs.
+
 == Discover CA Capabilities ==
 
  * Support for "rollover" CA certificates
