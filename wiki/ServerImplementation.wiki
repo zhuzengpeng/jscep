@@ -6,3 +6,7 @@ jSCEP provides an abstract servlet to eliminate the SCEP-specific parts, leaving
 Servlet Container (tested with [http://jetty.codehaus.org/jetty/ Jetty])
 
 Extend com.google.code.jscep.!ScepServlet
+
+----
+
+<wiki:gadget url="http://jscep.googlecode.com/svn/wiki/adsense.xml?v=0" border="0" width="728" height="90">
