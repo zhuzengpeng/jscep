@@ -1,7 +1,7 @@
  This page is for discussing how to add jSCEP to your own project using Maven.  For details     
  on how to _build_ jSCEP using Maven, see the [SourceCode source code] page.
 
-jSCEP is now available from the [http://repo1.maven.org/maven2/ Maven central repository].  The dependency details are as follows:
+jSCEP artifacts (including sources and javadocs) are now available from the [http://repo1.maven.org/maven2/ Maven central repository].  The dependency details are as follows:
 
 || groupId || *com.google.code.jscep* ||
 || artifactId || *jscep-api*, *jscep-client* or *jscep-server* ||
