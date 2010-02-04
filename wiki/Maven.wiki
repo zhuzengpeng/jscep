@@ -3,4 +3,4 @@
 
 jSCEP should be available from the central Maven repository soon.  In the meantime, it is available from the [http://oss.repository.sonatype.org/content/repositories/releases/ Sonatype OSS repository].
 
-http://oss.sonatype.org/images/branding.png
+[http://www.sonatype.com http://oss.sonatype.org/images/branding.png]
