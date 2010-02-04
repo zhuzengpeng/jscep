@@ -55,15 +55,19 @@ GetNextCACert
 
 == Certificate Access ==
 
-!GetCert and !GetCertInitial
+Retrieve a previously-signed certificate by issuer and serial number
+
+!GetCert
 
 == CRL Access ==
 
-GetCRL
+Retrieves a CRL from the CA.
+
+What about [http://tools.ietf.org/html/rfc5280 CRL distribution points]?
 
 == Certificate Enrollment ==
 
-PKCSReq
+Enroll a certificate, including renewal.  If the certificate enrollment process is manual, check to see if a certificate has been issued yet.
 
 The goal of the jSCEP project is simple: to produce a pure Java implementation of the SCEP protocol that complies with the [http://tools.ietf.org/html/draft-nourse-scep latest SCEP Internet-Draft], and is compatible with *any* compliant SCEP server implementation, including, but not limited to:
 
