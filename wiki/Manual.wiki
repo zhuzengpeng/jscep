@@ -1,4 +1,4 @@
-#labels Phase-Support
+#labels Phase-Support,Featured
 #sidebar TableOfContents
 
 <wiki:toc/>
