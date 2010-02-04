@@ -1,4 +1,4 @@
-#labels Phase-Implementation,Featured
+#labels Phase-Implementation
 <wiki:toc/>
 
 = Introduction =
