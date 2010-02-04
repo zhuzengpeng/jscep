@@ -15,7 +15,7 @@ To build, jSCEP from source, you'll need the following tools:
 
 === Getting the Source Code ===
 
-You can checkout the trunk (what about other [Branches branches]?) by running the following commands on your command-line:
+You can checkout the trunk (what about other branches and tags?) by running the following commands on your command-line:
 
 {{{
 user@host:~$ svn checkout http://jscep.googlecode.com/svn/trunk/ jscep-read-only
