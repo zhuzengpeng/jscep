@@ -13,4 +13,4 @@ Especially if you have access to a SCEP-capable server.  It would be good to pro
 
 == Coding Standards ==
 
-Try to follow the Code Conventions for the Java&trade; Programming Language published by ~~Sun~~ Oracle.
+Try to follow the [http://java.sun.com/docs/codeconv/ Code Conventions for the Java Programming Language], as published by ~~Sun~~ Oracle.
