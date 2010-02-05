@@ -1,6 +1,6 @@
 #sidebar TableOfContents
 
-In addition to [http://java.sun.com/javase/downloads/index.jsp Java], you will need the following libraries to use jSCEP:
+In addition to [http://java.sun.com/javase/downloads/index.jsp Java], you will need the following libraries in your classpath to use jSCEP:
 
 *[http://www.bouncycastle.org/latest_releases.html Bouncy Castle Provider]*
 
