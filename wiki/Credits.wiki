@@ -26,4 +26,4 @@ jSCEP uses the following software:
 
 *Maven Artefact Hosting*
 
-Sonatype
+[http://www.sonatype.com/ http://oss.sonatype.org/images/branding.png]
