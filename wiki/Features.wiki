@@ -19,6 +19,8 @@ When the current CA certificate is ready to expire, we can retrieve the next CA 
 
 *Not currently implemented.  Need to refactor signedData generator.*
 
+It seems to make sense that if a CA has a replacement lined up, new certificates should use that.
+
 === HTTP POST ===
 
 Sending requests over POST vs GET
