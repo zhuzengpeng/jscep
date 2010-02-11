@@ -11,8 +11,13 @@ jSCEP uses the following software:
 
 == Dependencies ==
 
-  * [http://www.bouncycastle.org/ Bouncy Castle] for Cryptography
-  * [http://commons.apache.org/codec/ Apache Commons Codec] for Base64 and Hex Encoding
+=== Cryptography ===
+
+[http://www.bouncycastle.org/ Bouncy Castle] for Cryptography
+
+=== Encoding ===
+
+[http://commons.apache.org/codec/ Apache Commons Codec] for Base64 and Hex Encoding
 
 == System Testing ==
 
@@ -20,10 +25,10 @@ jSCEP uses the following software:
 
 == Hosting ==
 
-*Project Hosting*
+=== Project Hosting ===
 
 [http://code.google.com/ http://code.google.com/images/code_logo.png]
 
-*Maven Artefact Hosting*
+=== Maven Artefact Hosting ===
 
 [http://www.sonatype.com/ http://oss.sonatype.org/images/branding.png]
