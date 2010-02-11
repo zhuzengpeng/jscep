@@ -1,0 +1,14 @@
+jSCEP relies on the following software:
+
+== Build Process ==
+
+  * [http://maven.apache.org/ Maven] for Build
+  * [http://www.junit.org/ JUnit] for Unit Testing
+  * [http://easymock.org/ EasyMock] for Unit Testing
+  * [http://www.eclipse.org/jetty/ Jetty] for System Testing
+  * [http://cobertura.sourceforge.net/ Cobertura] for Code Coverage
+
+== Dependencies ==
+
+  * [http://www.bouncycastle.org/ Bouncy Castle]
+  * [http://commons.apache.org/codec/ Apache Commons Codec]
