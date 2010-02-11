@@ -1,5 +1,7 @@
 jSCEP uses the following software:
 
+<wiki:toc/>
+
 == Development ==
 
   * [http://www.eclipse.org/ http://www.eclipse.org/artwork/images/eclipse_pos_logo_fc_sm.jpg] for Development
