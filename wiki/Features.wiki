@@ -54,7 +54,7 @@ Retrieve the certificate used by the CA.  Need to know what to expect:
 
  * Fingerprint
  * Certificate
- * Truststore ?
+ * Truststore - this is really for use by the server.  For example, if an RA is used as an intermediary, the CA might allow all requests from the RA.  The RA, however, might require authentication using a PKCS #9 challengePassword.
 
 == Retrieve "Rollover" CA Certificate ==
 
@@ -64,7 +64,7 @@ GetNextCACert
 
 == Certificate Access ==
 
-Retrieve a previously-signed certificate by issuer and serial number
+Retrieve a previously-signed certificate by issuer and serial number.
 
 == CRL Access ==
 
@@ -72,9 +72,11 @@ Retrieves a CRL from the CA.
 
 What about [http://tools.ietf.org/html/rfc5280 CRL distribution points]?
 
+We can now recognise if a CA certificate supports distribution points, but there is significant effort required to _use_ those distribution points.
+
 == Certificate Enrollment ==
 
-Enroll a certificate, including renewal (if supported).  If the certificate enrollment process is manual, check to see if a certificate has been issued yet.
+Enroll a certificate, including renewal (if supported).  If the certificate enrollment process is manual, check to see if a certificate has been issued yet.  This will involve the implementation of a state machine.
 
 The goal of the jSCEP project is simple: to produce a pure Java implementation of the SCEP protocol that complies with the [http://tools.ietf.org/html/draft-nourse-scep latest SCEP Internet-Draft], and is compatible with *any* compliant SCEP server implementation, including, but not limited to:
 
