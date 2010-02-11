@@ -1,4 +1,4 @@
-jSCEP is licensing under the MIT License:
+jSCEP is licensing under the [http://en.wikipedia.org/wiki/MIT_License MIT License]:
 
 <pre>
 Copyright (c) 2009-2010 David Grant
