@@ -1,4 +1,4 @@
-== Development ==
+== Development Environment ==
 
   * [http://www.eclipse.org/ Eclipse IDE]
   * [http://maven.apache.org/ Maven]
