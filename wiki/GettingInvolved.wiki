@@ -3,11 +3,15 @@
 
 == File an Issue ==
 
+Reporting bugs or requesting features.
+
 == Write a Test ==
 
 Especially if you have access to a SCEP-capable server.  It would be good to provide a simple tool to allow adopters to test out jSCEP against their particular server.
 
 == Submit a Patch ==
+
+If you've come across a problem, or can improve an area of jSCEP, please provide a patch (using `svn diff`) on the latest version of the branch you're interested in (including trunk).
 
 == Become a Committer ==
 
