@@ -1,7 +1,8 @@
-jSCEP relies on the following software:
+jSCEP uses the following software:
 
 == Build Process ==
 
+  * [http://www.eclipse.org/ Eclipse] for Development
   * [http://maven.apache.org/ Maven] for Building
   * [http://www.junit.org/ JUnit] for Unit Testing
   * [http://easymock.org/ EasyMock] for Unit Testing
