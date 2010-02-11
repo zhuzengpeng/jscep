@@ -4,7 +4,7 @@ jSCEP uses the following software:
 
 == Development ==
 
-[http://www.eclipse.org/ http://www.eclipse.org/artwork/images/eclipse_pos_logo_fc_sm.jpg]
+[http://www.eclipse.org/ http://www.eclipse.org/artwork/images/eclipse_bckgr_logo_fc_sm.jpg]
 
 == Build ==
 
