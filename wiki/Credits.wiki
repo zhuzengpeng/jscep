@@ -4,7 +4,7 @@ jSCEP uses the following software:
 
 == Development ==
 
-[http://www.eclipse.org/ http://www.eclipse.org/artwork/images/eclipse_bckgr_logo_fc_sm.jpg]
+  * [http://www.eclipse.org/ Eclipse IDE]
 
 == Build ==
 
@@ -14,8 +14,7 @@ jSCEP uses the following software:
 
   * [http://www.junit.org/ JUnit]
   * [http://cobertura.sourceforge.net/ Cobertura]
-
-[http://easymock.org/ http://easymock.org/img/easymock.gif]
+  * [http://easymock.org/ EasyMock]
 
 == Dependencies ==
 
@@ -25,24 +24,24 @@ jSCEP uses the following software:
 
 === Encoding ===
 
-[http://commons.apache.org/codec/ http://commons.apache.org/images/logo.png]
+  * [http://commons.apache.org/codec/ Apache Commons Codec]
 
 == System Testing ==
 
 === PKI ===
 
-[http://www.ejbca.org/ http://www.ejbca.org/images/ejbca_pki_by_primekey_logo.png]
+  * [http://www.ejbca.org/ EJBCA]
 
 === Web Server ===
 
-[http://www.eclipse.org/jetty/ http://www.eclipse.org/jetty/images/jetty-logo-80x22.png]
+  * [http://www.eclipse.org/jetty/ Jetty]
 
 == Hosting ==
 
 === Project Hosting ===
 
-[http://code.google.com/ http://code.google.com/images/code_logo.png]
+[http://code.google.com/ Google Code]
 
 === Maven Artefact Hosting ===
 
-[http://www.sonatype.com/ http://oss.sonatype.org/images/branding.png]
+[http://www.sonatype.com/ Sonatype]
