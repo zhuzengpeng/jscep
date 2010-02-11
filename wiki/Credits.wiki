@@ -2,7 +2,7 @@ jSCEP relies on the following software:
 
 == Build Process ==
 
-  * [http://maven.apache.org/ Maven] for Build
+  * [http://maven.apache.org/ Maven] for Building
   * [http://www.junit.org/ JUnit] for Unit Testing
   * [http://easymock.org/ EasyMock] for Unit Testing
   * [http://www.eclipse.org/jetty/ Jetty] for System Testing
