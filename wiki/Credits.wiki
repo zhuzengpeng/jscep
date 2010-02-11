@@ -20,5 +20,10 @@ jSCEP uses the following software:
 
 == Hosting ==
 
-  * [http://code.google.com/ Google Code]
-  * Sonatype
+*Project Hosting*
+
+[http://code.google.com/ http://code.google.com/images/code_logo.png]
+
+*Maven Artefact Hosting*
+
+Sonatype
