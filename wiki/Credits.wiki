@@ -4,11 +4,17 @@ jSCEP uses the following software:
 
 == Development ==
 
-  * [http://www.eclipse.org/ http://www.eclipse.org/artwork/images/eclipse_pos_logo_fc_sm.jpg] for Development
-  * [http://maven.apache.org/ Maven] for Building
-  * [http://www.junit.org/ JUnit] for Unit Testing
-  * [http://easymock.org/ http://easymock.org/img/easymock.gif] for Unit Testing
-  * [http://www.eclipse.org/jetty/ http://www.eclipse.org/jetty/images/jetty-logo-80x22.png] for System Testing
+[http://www.eclipse.org/ http://www.eclipse.org/artwork/images/eclipse_pos_logo_fc_sm.jpg] for Development
+
+== Build ==
+
+[http://maven.apache.org/ Maven]
+
+== Testing ==
+
+[http://www.junit.org/ JUnit]
+
+[http://easymock.org/ http://easymock.org/img/easymock.gif]
   * [http://cobertura.sourceforge.net/ Cobertura] for Code Coverage
 
 == Dependencies ==
@@ -23,7 +29,13 @@ jSCEP uses the following software:
 
 == System Testing ==
 
+=== PKI ===
+
 [http://www.ejbca.org/ http://www.ejbca.org/images/ejbca_pki_by_primekey_logo.png]
+
+=== Web Server ===
+
+[http://www.eclipse.org/jetty/ http://www.eclipse.org/jetty/images/jetty-logo-80x22.png]
 
 == Hosting ==
 
