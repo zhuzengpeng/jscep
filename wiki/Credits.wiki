@@ -5,43 +5,22 @@ jSCEP uses the following software:
 == Development ==
 
   * [http://www.eclipse.org/ Eclipse IDE]
-
-== Build ==
-
   * [http://maven.apache.org/ Maven]
-
-== Testing ==
-
   * [http://www.junit.org/ JUnit]
   * [http://cobertura.sourceforge.net/ Cobertura]
   * [http://easymock.org/ EasyMock]
 
 == Dependencies ==
 
-=== Cryptography ===
-
   * [http://www.bouncycastle.org/ Bouncy Castle]
-
-=== Encoding ===
-
   * [http://commons.apache.org/codec/ Apache Commons Codec]
 
 == System Testing ==
 
-=== PKI ===
-
   * [http://www.ejbca.org/ EJBCA]
-
-=== Web Server ===
-
   * [http://www.eclipse.org/jetty/ Jetty]
 
 == Hosting ==
 
-=== Project Hosting ===
-
-[http://code.google.com/ Google Code]
-
-=== Maven Artefact Hosting ===
-
-[http://www.sonatype.com/ Sonatype]
+  * [http://code.google.com/ Google Code]
+  * [http://www.sonatype.com/ Sonatype]
