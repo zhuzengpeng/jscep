@@ -11,3 +11,4 @@
    * [MailingLists Mailing Lists]
    * [GettingInvolved Getting Involved]
    * [Resources Resources]
+   * [Credits Credits]
