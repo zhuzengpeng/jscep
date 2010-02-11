@@ -1,6 +1,6 @@
-jSCEP uses the following software:
-
 <wiki:toc/>
+
+jSCEP uses the following software:
 
 == Development ==
 
