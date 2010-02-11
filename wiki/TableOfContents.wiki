@@ -3,6 +3,7 @@
    * [Requirements Requirements]
    * [Manual Manual]
    * [Roadmap Roadmap]
+   * [Legal Legal & Licensing]
  * Getting jSCEP
    * [CompiledPackages Compiled Packages]
    * [SourceCode Source Code]
