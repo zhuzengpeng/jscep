@@ -15,6 +15,8 @@ If you've come across a problem, or can improve an area of jSCEP, please provide
 
 == Become a Committer ==
 
+If you'd like to become more involved in jSCEP, then you can apply to become a committer, and fix reported issues and implement requested features.
+
 == Coding Standards ==
 
 Try to follow the [http://java.sun.com/docs/codeconv/ Code Conventions for the Java Programming Language], as published by ~~Sun~~ Oracle.
