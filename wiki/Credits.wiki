@@ -12,20 +12,20 @@ jSCEP uses the following software:
 
 == Testing ==
 
-[http://www.junit.org/ JUnit]
+  * [http://www.junit.org/ JUnit]
+  * [http://cobertura.sourceforge.net/ Cobertura]
 
 [http://easymock.org/ http://easymock.org/img/easymock.gif]
-  * [http://cobertura.sourceforge.net/ Cobertura] for Code Coverage
 
 == Dependencies ==
 
 === Cryptography ===
 
-[http://www.bouncycastle.org/ Bouncy Castle] for Cryptography
+  * [http://www.bouncycastle.org/ Bouncy Castle]
 
 === Encoding ===
 
-[http://commons.apache.org/codec/ Apache Commons Codec] for Base64 and Hex Encoding
+[http://commons.apache.org/codec/ http://commons.apache.org/images/logo.png]
 
 == System Testing ==
 
