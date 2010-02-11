@@ -6,7 +6,7 @@ jSCEP uses the following software:
   * [http://maven.apache.org/ Maven] for Building
   * [http://www.junit.org/ JUnit] for Unit Testing
   * [http://easymock.org/ EasyMock] for Unit Testing
-  * [http://www.eclipse.org/jetty/ Jetty] for System Testing
+  * [http://www.eclipse.org/jetty/ http://www.eclipse.org/jetty/images/jetty-logo-80x22.png] for System Testing
   * [http://cobertura.sourceforge.net/ Cobertura] for Code Coverage
 
 == Dependencies ==
