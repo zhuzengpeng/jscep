@@ -1,8 +1,8 @@
 jSCEP uses the following software:
 
-== Build Process ==
+== Development ==
 
-  * [http://www.eclipse.org/ Eclipse] for Development
+  * [http://www.eclipse.org/ http://www.eclipse.org/artwork/images/eclipse_pos_logo_fc_sm.jpg] for Development
   * [http://maven.apache.org/ Maven] for Building
   * [http://www.junit.org/ JUnit] for Unit Testing
   * [http://easymock.org/ http://easymock.org/img/easymock.gif] for Unit Testing
@@ -17,3 +17,8 @@ jSCEP uses the following software:
 == System Testing ==
 
 [http://www.ejbca.org/ http://www.ejbca.org/images/ejbca_pki_by_primekey_logo.png]
+
+== Hosting ==
+
+  * [http://code.google.com/ Google Code]
+  * Sonatype
