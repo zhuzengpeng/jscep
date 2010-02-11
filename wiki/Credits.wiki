@@ -1,5 +1,3 @@
-<wiki:toc/>
-
 jSCEP uses the following software:
 
 == Development ==
