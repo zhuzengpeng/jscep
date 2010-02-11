@@ -16,4 +16,4 @@ jSCEP uses the following software:
 
 == System Testing ==
 
-  * [http://www.ejbca.org/ http://www.ejbca.org/images/ejbca_pki_by_primekey_logo.png]
+[http://www.ejbca.org/ http://www.ejbca.org/images/ejbca_pki_by_primekey_logo.png]
