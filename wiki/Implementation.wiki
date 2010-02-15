@@ -7,4 +7,4 @@ This page discusses how to use jSCEP in your own application.  For full usage in
 
   * [ClientConfiguration Client Configuration]
   * [InformationRequests Information Requests]
-  * [Transactions Transactional Requests]
+  * [TransactionalRequests Transactional Requests]
