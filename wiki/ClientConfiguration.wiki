@@ -15,7 +15,7 @@ builder.identity(clientCertificate, clientKeyPair);
 final Client client = builder.build();
 }}}
 
-The following sections will go into more details on the various parts.
+The following sections will go into more details on the various requirements.
 
 == Specifying the Address of the SCEP Server ==
 
