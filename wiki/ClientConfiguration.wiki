@@ -1,6 +1,8 @@
 <wiki:toc/>
 
-This section shows how to create a SCEP client.  
+This section shows how to create a SCEP client.
+
+As a minimum, you need to specify the address of the server, the identity of the client, and a means of identifying the server certificate.  The following snippet how one would configure a client when the CA identity is already known.
 
 {{{
 final X509Certificate clientCertificate = ...;
@@ -8,7 +10,7 @@ final KeyPair clientKeyPair = ...;
 
 final Client.Builder builder = new Client.Builder();
 builder.url(new URL("http://www.example.org/scep/pkiclient.exe"));
-builder.caFingerprint(digest, "MD5");
+builder.caFingerprint(new byte[] {-93, -44, 23, 25, -106, 116, 80, -113, 36, 23, 76, -89, -36, -18, 89, -59}, "MD5");
 builder.identity(clientCertificate, clientKeyPair);
 final Client client = builder.build();
 }}}
