@@ -132,7 +132,12 @@ builder.url(url);
 builder.caFingerprint(digest, "MD5");
 builder.identity(identity, keyPair);
 Client client = builder.build();
+Transaction trans = client.createTransaction();
 // Send the enrollment request using our secret password
-List<X509Certificates> certs = client.enroll(identity, keyPair, "password".toCharArray()); 
+trans.enroll(identity, keyPair, "password".toCharArray()); 
+// Check for completion
+if (trans.getState() == Transaction.State.SUCCEEDED) {
+    CertStore store = trans.getCertStore();
+}
 
 }}}
