@@ -30,5 +30,8 @@ trans.enrollCertificate(identity, keyPair, "password".toCharArray());
 if (trans.getState() == Transaction.State.SUCCEEDED) {
     CertStore store = trans.getCertStore();
 }
-
 }}}
+
+== Rollover ==
+
+http://tools.ietf.org/html/draft-nourse-scep-20#appendix-E
