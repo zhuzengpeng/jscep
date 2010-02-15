@@ -19,7 +19,7 @@ The following sections will go into more details on the various requirements.
 
 == Specifying the Address of the SCEP Server ==
 
-Predictably, each client must know the URL used by the SCEP server application.
+Predictably, each client must know the URL used by the SCEP server application in order to correctly address requests.
 
 {{{
 builder.url(new URL("http://www.example.org/scep/pkiclient.exe"));
