@@ -125,6 +125,7 @@ byte[] digest = getDigest();
 
 // Create our new client
 Client.Builder builder = new Client.Builder();
+builder.url(url);
 builder.caFingerprint(digest, "MD5");
 builder.identity(identity, keyPair);
 Client client = builder.build();
