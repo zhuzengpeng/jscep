@@ -48,14 +48,14 @@ builder.caFingerprint(digest, "MD5");
 
 The algorithm must be one of `MD5`, `SHA-1`, `SHA-256` or `SHA-512`.
 
-Alternatively, you can have jSCEP prompt the user for confirmation of the CA fingerprint or by providing a [http://java.sun.com/javase/6/docs/api/javax/security/auth/callback/CallbackHandler.html CallbackHandler]:
+Alternatively, you can have jSCEP prompt the user using Swing or a CLI application for confirmation of the CA fingerprint by providing a [http://java.sun.com/javase/6/docs/api/javax/security/auth/callback/CallbackHandler.html CallbackHandler]:
 
 {{{
 CallbackHandler handler = ...;
 builder.callbackHandler(handler);
 }}}
 
-The CallbackHandler will be expected to handle a single callback, [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/FingerprintVerificationCallback.html FingerprintVerificationCallback].
+The !CallbackHandler will be expected to handle a single callback: [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/FingerprintVerificationCallback.html FingerprintVerificationCallback].
 
 === Technical Note on Calculating Digests ===
 
