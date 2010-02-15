@@ -7,34 +7,3 @@ This page discusses how to use jSCEP in your own application.  For full usage in
 
   * [ClientConfiguration Client Configuration]
   * [Transactions SCEP Transactions]
-
-= Renewing an Existing Certificate =
-
-If the CA supports renewal, we can renew an existing certificate.  This example assumes automatic enrollment.
-
-{{{
-// Locate the existing certificate
-X509Certificate identity = ...;
-// ...and the key pair
-KeyPair keyPair = ...;
-// Locate the SCEP server
-URL url = new URL("http://www.example.org/scep/pkiclient.exe");
-// Specify the CA digest
-byte[] digest = getDigest();
-
-// Create our new client
-Client.Builder builder = new Client.Builder();
-builder.url(url);
-builder.caFingerprint(digest, "MD5");
-builder.identity(identity, keyPair);
-Client client = builder.build();
-
-Transaction trans = client.createTransaction();
-// Send the enrollment request using our secret password
-trans.enrollCertificate(identity, keyPair, "password".toCharArray()); 
-// Check for completion
-if (trans.getState() == Transaction.State.SUCCEEDED) {
-    CertStore store = trans.getCertStore();
-}
-
-}}}
