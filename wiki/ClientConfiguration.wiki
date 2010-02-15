@@ -35,7 +35,7 @@ builder.proxy(new Proxy(Proxy.Type.HTTP, new InetSocketAddress("proxy.example.or
 
 === Technical Note on Validating URLs ===
 
-Your URL must satisfy the following requirements:
+Your URL must be a HTTP URL ending with `pkiclient.exe` with no query string, and no reference fragment.  That is, it must satisfy the following conditions:
 
 {{{
 url.getProtocol().matches("^https?$");
