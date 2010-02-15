@@ -33,8 +33,6 @@ If the machine on which the code is being executed does not have a direct route 
 builder.proxy(new Proxy(Proxy.Type.HTTP, new InetSocketAddress("proxy.example.org", 8080)));
 }}}
 
-If you don't provide a proxy, jSCEP will default to using [http://java.sun.com/javase/6/docs/api/java/net/Proxy.html#NO_PROXY Proxy.NO_PROXY].
-
 === Technical Note on Validating URLs ===
 
 Your URL must satisfy the following requirements:
