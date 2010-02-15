@@ -1,0 +1,5 @@
+= Determining Server Capabilities =
+
+{{{
+client.getCaCapabilities();
+}}}
