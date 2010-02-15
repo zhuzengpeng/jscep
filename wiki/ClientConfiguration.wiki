@@ -48,7 +48,7 @@ url.getRef() == null
 url.getQuery() == null;
 }}}
 
-== Identifying the CA ==
+== Identifying the Server Certificate ==
 
 Next, you must provide a way for the SCEP client to validate the CA.  This can be done by providing the hash of the certificate and algorithm name:
 
@@ -79,7 +79,7 @@ byte[] digest = md.digest(ca.getEncoded());
 
 If your digest algorithm is not provided by a Security [http://java.sun.com/javase/6/docs/api/java/security/Provider.html Provider], jSCEP will throw a [http://java.sun.com/javase/6/docs/api/java/security/NoSuchAlgorithmException.html NoSuchAlgorithmException].
 
-== Specifying the Certification Entity ==
+== Specifying the Client Identity ==
 
 Next, you have to provide a certificate and key pair to represent the SCEP client.  This can be the certificate and key pair that you are enrolling, but it may also be different.
 
