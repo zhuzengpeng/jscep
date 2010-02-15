@@ -3,10 +3,15 @@
 This section shows how to create a SCEP client.  
 
 {{{
+final X509Certificate clientCertificate = ...;
+final KeyPair clientKeyPair = ...;
+
 final Client.Builder builder = new Client.Builder();
 builder.url(new URL("http://www.example.org/scep/pkiclient.exe"));
 builder.proxy(new Proxy(Proxy.Type.HTTP, new InetSocketAddress("proxy.example.org", 8080)));
 builder.caFingerprint(digest, "MD5");
+builder.identity(clientCertificate, clientKeyPair);
+final Client client = builder.build();
 }}}
 
 
