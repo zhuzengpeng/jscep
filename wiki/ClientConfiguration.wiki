@@ -15,14 +15,9 @@ builder.identity(clientCertificate, clientKeyPair);
 final Client client = builder.build();
 }}}
 
+The following sections will go into more details on the various parts.
 
-The first step is to create an instance of the Client builder.
-
-{{{
-Client.Builder builder = new Client.Builder();
-}}}
-
-== Specifying the SCEP Server ==
+== Specifying the Address of the SCEP Server ==
 
 As a minimum, each client must be able to locate the SCEP server:
 
