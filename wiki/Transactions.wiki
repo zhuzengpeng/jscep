@@ -1,4 +1,8 @@
-= Renewing an Existing Certificate =
+<wiki:toc/>
+
+= Certificate Enrollment =
+
+== Renewing an Existing Certificate ==
 
 If the CA supports renewal, we can renew an existing certificate.  This example assumes automatic enrollment.
 
