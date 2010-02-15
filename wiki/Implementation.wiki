@@ -50,7 +50,7 @@ byte[] digest = new byte[] {-93, -44, 23, 25, -106, 116, 80, -113, 36, 23, 76, -
 builder.caFingerprint(digest, "MD5");
 }}}
 
-The algorithm must be one of `MD5`, `SHA-1`, `SHA-256` or `SHA-512`:
+The algorithm must be one of `MD5`, `SHA-1`, `SHA-256` or `SHA-512`.
 
 Alternatively, you can have jSCEP prompt the user for confirmation of the CA fingerprint or by providing a [http://java.sun.com/javase/6/docs/api/javax/security/auth/callback/CallbackHandler.html CallbackHandler]:
 
