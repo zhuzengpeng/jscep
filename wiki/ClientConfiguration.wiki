@@ -27,7 +27,7 @@ builder.url(new URL("http://www.example.org/scep/pkiclient.exe"));
 
 === Proxy Server ===
 
-If the machine on which the code is being executed does not have a direct route to your SCEP server, you can specify a proxy server to route requests to:
+If the machine on which the code is being executed does not have a direct route to your SCEP server, you can specify a proxy server to route requests through:
 
 {{{
 builder.proxy(new Proxy(Proxy.Type.HTTP, new InetSocketAddress("proxy.example.org", 8080)));
