@@ -25,7 +25,7 @@ Predictably, each client must know the URL used by the SCEP server application i
 builder.url(new URL("http://www.example.org/scep/pkiclient.exe"));
 }}}
 
-=== Proxy Server ===
+=== Using a Proxy Server ===
 
 If the machine on which the code is being executed does not have a direct route to your SCEP server, you can specify a proxy server to route requests through:
 
