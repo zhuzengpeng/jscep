@@ -3,3 +3,15 @@
 {{{
 client.getCaCapabilities();
 }}}
+
+= Retrieve CA Certificate =
+
+{{{
+client.getCaCertificate()
+}}}
+
+= Retrieve Rollover CA Certificate =
+
+{{{
+client.getNextCaCertificate()
+}}}
