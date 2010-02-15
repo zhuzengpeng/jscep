@@ -46,17 +46,15 @@ url.getQuery() == null;
 
 == Specifying the Client Identity ==
 
-Next, you have to provide a certificate and key pair to represent the SCEP client.  This can be the certificate and key pair that you are enrolling, but it may also be different.
+Next, you have to provide a certificate and key pair to represent the SCEP client. In most cases, the certificate and key pair provided here will also be the certificate being enrolled with the SCEP server, although this is by no means necessary, and in the case of an RA implementation, will not be the case.
 
 {{{
-X509Certificate identity = getCurrentCertificate();
-KeyPair keyPair = getKeyPair();
-builder.identity(identity, keyPair);
+builder.identity(clientCertificate, clientKeyPair);
 }}}
 
 === Technical Note on Key Pairs ==
 
-The key pair you provide *must* satisfy the following requirements:
+The key pair you provide *must* satisfy be an RSA key pair, satisfying the following conditions:
 
 {{{
 keyPair.getPrivate().getAlgorithm().equals("RSA");
