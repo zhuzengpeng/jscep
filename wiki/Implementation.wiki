@@ -7,14 +7,17 @@ This page discusses how to use jSCEP in your own application.  For full usage in
 
 = Building a Requester =
 
-This section shows how to create a SCEP client.
+This section shows how to create a SCEP client.  The first step is to create an instance of the Client builder.
 
-== Specifying the SCEP Server ==
+{{{
+Client.Builder builder = new Client.Builder();
+}}}
+
+== Specifying the SCEP Server [MANDATORY] ==
 
 As a minimum, each client must be able to locate the SCEP server:
 
 {{{
-Client.Builder builder = new Client.Builder();
 URL url = new URL("http://www.example.org/scep/pkiclient.exe");
 builder.url(url);
 }}}
