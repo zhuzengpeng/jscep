@@ -14,8 +14,9 @@ This section shows how to create a SCEP client.
 As a minimum, each client must be able to locate the SCEP server:
 
 {{{
+Client.Builder builder = new Client.Builder();
 URL url = new URL("http://www.example.org/scep/pkiclient.exe");
-ClientConfiguration config = new ClientConfiguration(url);
+builder.url(url);
 }}}
 
 === Proxy Server ===
@@ -24,7 +25,7 @@ If you need to go through a proxy server to make HTTP requests, you will need to
 
 {{{
 Proxy proxy = getProxy();
-ClientConfiguration config = new ClientConfiguration(url, proxy);
+builder.proxy(proxy);
 }}}
 
 If you don't provide a proxy, jSCEP will default to using [http://java.sun.com/javase/6/docs/api/java/net/Proxy.html#NO_PROXY Proxy.NO_PROXY].
@@ -42,27 +43,23 @@ url.getQuery() == null;
 
 == Identifying the CA ==
 
-Next, you must provide a way for the SCEP client to validate the CA.  This is done by providing the CA certificate:
+Next, you must provide a way for the SCEP client to validate the CA.  This can be done by providing the hash of the certificate and algorithm name:
 
 {{{
-X509Certificate ca = getCaCertificate();
-config.setCaCertificate(ca);
+byte[] digest = new byte[] {-93, -44, 23, 25, -106, 116, 80, -113, 36, 23, 76, -89, -36, -18, 89, -59}
+builder.caFingerprint(digest, "MD5");
 }}}
 
-or by providing the digest of the certificate:
+The algorithm must be one of `MD5`, `SHA-1`, `SHA-256` or `SHA-512`:
+
+Alternatively, you can have jSCEP prompt the user for confirmation of the CA fingerprint or by providing a CallbackHandler:
 
 {{{
-byte[] digest = getCaDigest();
-config.setCaDigest(digest);
+CallbackHandler handler = ...;
+builder.callbackHandler(handler);
 }}}
 
-If the digest isn't an `MD5` hash, you must specify the algorithm you've used, which must be one of `MD5`, `SHA-1`, `SHA-256` or `SHA-512`:
-
-{{{
-config.setCaDigest(digest, "SHA-1");
-}}}
-
-If you provide a CA certificate and a digest algorithm, the SCEP client will use the algorithm you have requested when it does its own internal calculations.
+The CallbackHandler will be expected to handle a single callback, FingerprintVerificationCallback.
 
 === Technical Note on Calculating Digests ===
 
@@ -77,23 +74,13 @@ If your digest algorithm is not provided by a Security [http://java.sun.com/java
 
 == Specifying the Certification Entity ==
 
-Next, you have to provide a certification entity.  What you provide is usually dictated by the operation you're performing.  If you're doing an initial enrollment, you'll usually provide a X.500 subject:
-
-{{{
-X500Principal subject = getSubject();
-config.setSubject(subject);
-}}}
-
-Alternatively, if you're renewing an existing certificate, you'll need to provide both the existing certificate and the *corresponding* RSA key pair:
+Next, you have to provide a certificate and key pair to represent the SCEP client.  This can be the certificate and key pair that you are enrolling, but it may also be different.
 
 {{{
 X509Certificate identity = getCurrentCertificate();
 KeyPair keyPair = getKeyPair();
-config.setIdentity(identity);
-config.setKeyPair(keyPair);
+builder.identity(identity, keyPair);
 }}}
-
-In the case of an initial enrollment, you can provide your own self-signed certificate and generated key pair if you prefer.  If you don't, jSCEP will generate a certificate from the provided X.500 subject and create a new RSA key pair, which you can retrieve later.
 
 === Technical Note on Key Pairs ==
 
@@ -109,8 +96,7 @@ keyPair.getPublic().getAlgorithm().equals("RSA");
 If your SCEP server provides multiple CA certificates, you might need to provide a ca identifier, e.g.
 
 {{{
-String caId = "myCA";
-config.setCaId(caId);
+builder.caIdentifier("myCA");
 }}}
 
 == Building ==
@@ -118,38 +104,10 @@ config.setCaId(caId);
 Once you've finished specifying arguments, pass the `ClientConfiguration` into the `Client` constructor:
 
 {{{
-Client client = new Client(config);
+Client client = builder.build();
 }}}
 
 The constructor will throw an [http://java.sun.com/javase/6/docs/api/java/lang/IllegalStateException.html IllegalStateException] if you fail to comply with the above rules.
-
-= Simple Example =
-
-This example shows a simple automatic enrollment.
-
-{{{
-// Create the subject to be enrolled
-X500Principal subject = new X500Principal("CN=jscep.googlecode.com,O=Google Inc,L=Mountain View,ST=California,C=US");
-// Locate the SCEP server
-URL url = new URL("http://www.example.org/scep/pkiclient.exe");
-// Specify the CA digest
-byte[] digest = getDigest();
-
-ClientConfiguration config = new ClientConfiguration(url);
-config.setCaDigest(digest);
-config.setSubject(subject);
-// Create a new client.  We'll use a generated key pair
-Client client = new Client(config);
-// Send the enrollment request using our secret password
-EnrollmentResult result = client.enroll("password".toCharArray()); 
-// Automatic enrollments will NEVER be pending
-if (result.getStatus() == PkiStatus.SUCCESS) {
-    // Get the list of certificates from the result.
-    List<X509Certificate> certs = result.getCertificates();
-    // Get the generated key pair.
-    KeyPair pair = client.getKeyPair();
-}
-}}}
 
 = Renewing an Existing Certificate =
 
@@ -166,52 +124,11 @@ URL url = new URL("http://www.example.org/scep/pkiclient.exe");
 byte[] digest = getDigest();
 
 // Create our new client
-ClientConfiguration config = new ClientConfiguration(url);
-config.setCaDigest(digest);
-config.setIdentity(identity);
-config.setKeyPair(keyPair);
-Client client = new Client(config);
+Client.Builder builder = new Client.Builder();
+builder.caFingerprint(digest, "MD5");
+builder.identity(identity, keyPair);
+Client client = builder.build();
 // Send the enrollment request using our secret password
-EnrollmentResult result = client.enroll("password".toCharArray()); 
-// Again, automatic enrollment is NEVER pending
-if (result.getStatus() == PkiStatus.SUCCESS) {
-    // Retrieve the list of certificates
-    List<X509Certificate> certs = result.getCertificates();
-    // Replace the identity certificate.
-    identity = certs.get(0);
-}
-}}}
+List<X509Certificates> certs = client.enroll(identity, keyPair, "password".toCharArray()); 
 
-= Pending Response =
-
-It is valid for the CA to have a manual policy, which might leave the request in a pending state.  jSCEP allows you to schedule the retry for later by providing a callable task.
-
-{{{
-// Create the subject to be enrolled
-X500Principal subject = new X500Principal("CN=jscep.googlecode.com,O=Google Inc,L=Mountain View,ST=California,C=US");
-// Locate the SCEP server
-URL url = new URL("http://www.example.org/scep/pkiclient.exe");
-// Specify the CA digest
-byte[] digest = getDigest();
-
-// Create a new client.  We'll use a generated key pair
-ClientConfiguration config = new ClientConfiguration(url);
-config.setCaDigest(digest);
-config.setSubject(subject);
-Client client = new Client(config);
-// Send the enrollment request using our secret password
-EnrollmentResult result = client.enroll("password".toCharArray());
-// We fully expect our response to be pending...
-ScheduledExecutorService exec = new ScheduledThreadPoolExecutor(1);
-TimeUnit unit = TimeUnit.HOURS;
-long wait = 2;
-while (result.getStatus() == PkiStatus.PENDING) {
-    // Our CA guarantees a SLA of 2 hours for issuing new certificates, so come back then.
-    ScheduledFuture<EnrollmentResponse> future = exec.schedule(result.getTask(), wait, unit);
-    // Block this thread until it returns.  There are plenty of other things you can do here, obviously, depending on the responsibilities of this thread.
-    response = future.get(wait, unit);
-    // These steps can be repeated as many times as the result is pending, so you can implement a "backing-off" 
-    // strategy by doubling your wait period. Next time we'll wait four hours, then eight, etc.
-    wait *= 2;
-}
 }}}
