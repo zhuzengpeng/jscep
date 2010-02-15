@@ -1,4 +1,4 @@
-his section shows how to create a SCEP client.  The first step is to create an instance of the Client builder.
+This section shows how to create a SCEP client.  The first step is to create an instance of the Client builder.
 
 {{{
 Client.Builder builder = new Client.Builder();
