@@ -6,4 +6,5 @@
 This page discusses how to use jSCEP in your own application.  For full usage information, you are recommended to read the [http://jscep.googlecode.com/svn/trunk/documentation/index.html javadocs].
 
   * [ClientConfiguration Client Configuration]
-  * [Transactions SCEP Transactions]
+  * [InformationRequests Information Requests]
+  * [Transactions Transactional Requests]
