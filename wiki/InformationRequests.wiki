@@ -1,5 +1,8 @@
 = Determining Server Capabilities =
 
+Calling [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/client/Client.html#getCaCapabilities() getCaCapabilities()] on the [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/client/Client.html Client] will yield a new [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/response/Capabilities.html Capabilities] instance, which provides information on each of the capabilities supported by the SCEP server.
+
+
 {{{
 client.getCaCapabilities();
 }}}
