@@ -6,7 +6,7 @@
 
 == Renewing an Existing Certificate ==
 
-If the CA [InformationRequests#DeterminingServerCapabilities supports renewal], we can renew an existing certificate.  This example assumes automatic enrollment.
+If the CA [InformationRequests#Determining_Server_Capabilities supports renewal], we can renew an existing certificate.  This example assumes automatic enrollment.
 
 {{{
 // Locate the existing certificate
