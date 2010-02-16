@@ -30,4 +30,4 @@ if (client.getCaCapabilities().isRolloverSupported()) {
 }
 }}}
 
-When this method is invoked, jSCEP will check the server capabilities to ensure that roll-over is supported.  If roll-over is *not* supported, the method will through an !UnsupportedOperationException.
+When this method is invoked, jSCEP will check the server capabilities to ensure that roll-over is supported.  If roll-over is *not* supported, the method will throw an [http://java.sun.com/javase/6/docs/api/java/lang/UnsupportedOperationException.html UnsupportedOperationException].
