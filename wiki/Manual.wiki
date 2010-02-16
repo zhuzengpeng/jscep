@@ -1,5 +1,5 @@
 #labels Phase-Support,Featured
-#title TableOfContents
+#name TableOfContents
 
 === About jSCEP ===
 
