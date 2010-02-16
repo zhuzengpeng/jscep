@@ -1,4 +1,4 @@
-= Determining Server Capabilities =
+=== Determining Server Capabilities ===
 
 Calling [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/client/Client.html#getCaCapabilities() getCaCapabilities()] on the [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/client/Client.html Client] will yield a new [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/response/Capabilities.html Capabilities] instance, which provides information on the configuration of the SCEP server.  The available information includes:
 
@@ -12,13 +12,13 @@ Calling [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jsc
 client.getCaCapabilities();
 }}}
 
-= Retrieve CA Certificate =
+=== Retrieve CA Certificate ===
 
 {{{
 client.getCaCertificate();
 }}}
 
-= Retrieve Rollover CA Certificate =
+=== Retrieve Rollover CA Certificate ===
 
 {{{
 client.getNextCaCertificate();
