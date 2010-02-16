@@ -20,7 +20,7 @@ Inspecting the capabilities of the SCEP server should be regarded as a prerequis
 
 *Technical Note*
 
-<blockquote>jSCEP checks the capabilities of the server before many internal operations.  Where possible, jSCEP will always send requests using HTTP POST, and will always use the strongest hash algorithms and ciphers supported by the server.</blockquote>
+<blockquote style="border: 1px black solid;">jSCEP checks the capabilities of the server before many internal operations.  Where possible, jSCEP will always send requests using HTTP POST, and will always use the strongest hash algorithms and ciphers supported by the server.</blockquote>
 
 === Retrieve CA Certificate ===
 
