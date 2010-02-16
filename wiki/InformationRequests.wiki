@@ -26,8 +26,18 @@ Inspecting the capabilities of the SCEP server should be regarded as a prerequis
 
 === Retrieve CA Certificate ===
 
+Calling [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/client/Client.html#getCaCertificate() getCaCertificate()] will the CA certificate.  If the SCEP server is an RA, both the CA and RA certificate will be retrieved.  The CA will *always* be the *first* certificate in the list:
+
 {{{
-client.getCaCertificate();
+final List<X509Certificate> certs = client.getCaCertificate();
+final X509Certificate ca = certs.get(0);
+final X509Certificate ra;
+
+if (certs.size() == 2) {
+    X509Certificate ra = certs.get(1);
+} else {
+    X509Certificate ra = null;
+}
 }}}
 
 === Retrieve Rollover CA Certificate ===
