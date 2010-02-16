@@ -1,3 +1,5 @@
+The following requests can be executed *outside* of a transaction:
+
 === Determining Server Capabilities ===
 
 Calling [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/client/Client.html#getCaCapabilities() getCaCapabilities()] on the [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/client/Client.html Client] will yield a new [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/response/Capabilities.html Capabilities] instance, which provides information on the configuration of the SCEP server.  The available information includes:
