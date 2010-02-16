@@ -9,9 +9,7 @@ This page will be used to capture the requirements of *all* jSCEP documentation 
 
 === Logging ===
 
-Uses Java Logging.  All packages start with
-
-`com.google.code.jscep`
+Uses Java Logging.  All packages start with `com.google.code.jscep`.
 
 === Security ===
 
