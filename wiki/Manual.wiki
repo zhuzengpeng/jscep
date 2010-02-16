@@ -7,12 +7,9 @@
 
 This page will be used to capture the requirements of *all* jSCEP documentation from a user's point of view.
 
+ * [Installation Installation]
  * [Implementation Client Implementation]
  * [ServerImplementation Server Implementation]
-
-== Installing ==
-
-See [Installation]
 
 == Logging ==
 
