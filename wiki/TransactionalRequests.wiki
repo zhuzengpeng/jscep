@@ -27,7 +27,7 @@ Transaction trans = client.createTransaction();
 // Send the enrollment request using our secret password
 trans.enrollCertificate(identity, keyPair, "password".toCharArray()); 
 // Check for completion
-if (trans.getState() == Transaction.State.SUCCEEDED) {
+if (trans.getState() == Transaction.State.CERT_ISSUED) {
     CertStore store = trans.getCertStore();
 }
 }}}
