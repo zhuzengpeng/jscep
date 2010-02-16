@@ -1,4 +1,4 @@
-<wiki:toc/>
+This section provides information on using jSCEP to perform *transactional* operations.
 
 === Certificate Enrollment ===
 
