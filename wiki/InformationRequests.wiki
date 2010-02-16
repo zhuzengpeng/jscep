@@ -16,6 +16,8 @@ Calling [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jsc
     * DES
     * Triple DES
 
+Inspecting the capabilities of the SCEP server should be regarded as a prerequisite for both certificate enrollment (to check if renewal is supported), and attempted retrieval of a roll-over certificate.
+
 === Retrieve CA Certificate ===
 
 {{{
