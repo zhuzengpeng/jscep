@@ -1,7 +1,12 @@
 = Determining Server Capabilities =
 
-Calling [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/client/Client.html#getCaCapabilities() getCaCapabilities()] on the [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/client/Client.html Client] will yield a new [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/response/Capabilities.html Capabilities] instance, which provides information on each of the capabilities supported by the SCEP server.
+Calling [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/client/Client.html#getCaCapabilities() getCaCapabilities()] on the [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/client/Client.html Client] will yield a new [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/response/Capabilities.html Capabilities] instance, which provides information on the configuration of the SCEP server.  The available information includes:
 
+  * Support for retrieval of a "rollover" CA certificate, if it exists.
+  * Support for sending SCEP operations using HTTP POST
+  * Support for renewing certificates
+  * Support for the SHA-1, SHA-256 and SHA-256 hash algorithms.
+  * Support for Triple-DES encryption.
 
 {{{
 client.getCaCapabilities();
