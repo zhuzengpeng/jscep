@@ -1,10 +1,12 @@
 <wiki:toc/>
 
-= Certificate Enrollment =
+=== Certificate Enrollment ===
 
-== Manual Enrollment ==
+==== Manual Enrollment ====
 
-== Renewing an Existing Certificate ==
+==== Renewing a Self-Signed Certificate ====
+
+==== Renewing an Existing Certificate ====
 
 If the CA [InformationRequests#Determining_Server_Capabilities supports renewal], we can renew an existing certificate.  This example assumes automatic enrollment.
 
@@ -34,6 +36,14 @@ if (trans.getState() == Transaction.State.CERT_ISSUED) {
 }
 }}}
 
-== Rollover ==
+==== Rollover ====
+
+*Using a roll-over certificate should be handled automatically.*
 
 http://tools.ietf.org/html/draft-nourse-scep-20#appendix-E
+
+=== Certificate Access ===
+
+=== CRL Access ===
+
+*What about distribution points?*
