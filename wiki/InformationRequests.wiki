@@ -2,9 +2,7 @@ The following requests can be executed *outside* of a transaction:
 
 === Determining Server Capabilities ===
 
-Calling [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/client/Client.html#getCaCapabilities() getCaCapabilities()] on your client instance will yield a new [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/response/Capabilities.html Capabilities] instance, which provides information on the configuration of the SCEP server.
-
-The `Capabilities` instance can be used to find out:
+Calling [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/client/Client.html#getCaCapabilities() getCaCapabilities()] on your client instance will yield a new [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/response/Capabilities.html Capabilities] instance, which provides information on the configuration of the SCEP server.  The following information can be retrieve from the capabilities instance:
 
   * if the server supports certificate rollover
   * if the server supports sending requests using HTTP POST
