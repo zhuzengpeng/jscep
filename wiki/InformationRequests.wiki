@@ -25,7 +25,9 @@ client.getCaCertificate();
 When a CA rolls over to a new certificate, it may choose to indicate this state change through its SCEP capabilities.  In such a case, [http://jscep.googlecode.com/svn/trunk/documentation/com/google/code/jscep/response/Capabilities.html#isRolloverSupported() Capabilities.isRolloverSupported()] will return `true`, and you are free to retrieve the certificate like so:
 
 {{{
-client.getRolloverCertificate();
+if (client.getCaCapabilities().isRolloverSupported()) {
+    client.getRolloverCertificate();
+}
 }}}
 
 When this method is invoked, jSCEP will check the server capabilities to ensure that roll-over is supported.  If roll-over is *not* supported, the method will through an !UnsupportedOperationException.
