@@ -9,7 +9,7 @@ This page will be used to capture the requirements of *all* jSCEP documentation 
 
  * [Installation Installation]
  * [Implementation Using the SCEP Client]
- * [ServerImplementation Server Implementation]
+ * [ServerImplementation Using the SCEP Servlet]
 
 == Logging ==
 
