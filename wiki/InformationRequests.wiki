@@ -20,7 +20,9 @@ Inspecting the capabilities of the SCEP server should be regarded as a prerequis
 
 *Technical Note*
 
- jSCEP checks (and caches) the capabilities of the server before many internal operations.  Where possible, jSCEP will always send requests using HTTP POST, and will always use the strongest hash algorithms and ciphers supported by the server.  Performing a manual request for capabilities will always refresh the cache.
+ jSCEP checks (and caches) the capabilities of the server before many internal operations.  Where possible, jSCEP will always send requests using HTTP POST, and will always use the strongest hash algorithms and ciphers supported by the server.  
+
+ Performing a manual request for capabilities will always refresh the cache.
 
 === Retrieve CA Certificate ===
 
