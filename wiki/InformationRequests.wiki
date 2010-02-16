@@ -1,4 +1,4 @@
-The following requests can be executed *outside* of a transaction:
+The following operations can be performed *outside* of a transaction:
 
 === Determining Server Capabilities ===
 
