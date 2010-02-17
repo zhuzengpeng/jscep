@@ -3,7 +3,7 @@
 
 == File an Issue ==
 
-Reporting bugs or requesting features.
+Reporting bugs, requesting features or providing general feedback.
 
 == Write a Test ==
 
