@@ -23,7 +23,7 @@ Client client = builder.build();
 
 Transaction trans = client.createTransaction();
 // Send the enrollment request using our secret password
-Transaction.State state = trans.enrollCertificate(identity, keyPair, "password".toCharArray()); 
+State state = trans.enrollCertificate(identity, keyPair, "password".toCharArray()); 
 // Check for completion
 while (state == State.CERT_REQ_PENDING) {
     // If we're manually enrolling, wait for an hour and try again.
@@ -62,10 +62,12 @@ Client client = builder.build();
 
 Transaction trans = client.createTransaction();
 // Send the enrollment request using our secret password
-Transaction.State state = trans.enrollCertificate(identity, keyPair, "password".toCharArray()); 
+State state = trans.enrollCertificate(identity, keyPair, "password".toCharArray()); 
 // Check for completion
 if (state == Transaction.State.CERT_ISSUED) {
     CertStore store = trans.getCertStore();
+} else if (state == State.CERT_NON_EXISTANT) {
+   FailInfo fail = trans.getFailureReason();
 }
 }}}
 
