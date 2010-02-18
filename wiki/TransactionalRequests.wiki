@@ -4,6 +4,10 @@ This section provides information on using jSCEP to perform *transactional* oper
 
 ==== Manual Enrollment ====
 
+Manual enrollment occurs when the client submits a request and does not receive an issued certificate immediately.  It becomes necessary for the client to enter into polling mode to keep checking back with the server to see if the certificate has been issued yet.
+
+The following code shows how to submit an enrollment request, and then poll the server hourly (blocking the thread) to check the status.
+
 {{{
 // Locate the certificate
 X509Certificate identity = ...;
@@ -41,6 +45,8 @@ if (state == State.CERT_ISSUED) {
 
 ==== Automatic Enrollment ====
 
+If your SCEP server automatically enrolls certificate requests into the PKI, it is likely that the issued certificate will be returned immediately.  If your application depends on this, you might choose to report an error if the result comes back as pending.
+
 {{{
 // Locate the existing certificate
 X509Certificate identity = ...;
@@ -73,7 +79,7 @@ if (state == State.CERT_ISSUED) {
 
 ==== Renewing an Existing Certificate ====
 
-If the CA [InformationRequests#Determining_Server_Capabilities supports renewal], we can renew an existing certificate.  This example assumes automatic enrollment.
+If your CA [InformationRequests#Determining_Server_Capabilities supports renewal], you can request the renewal an existing certificate.  This example assumes automatic enrollment.
 
 {{{
 // Locate the existing certificate
