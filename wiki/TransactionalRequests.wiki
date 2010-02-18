@@ -30,10 +30,12 @@ while (state == State.CERT_REQ_PENDING) {
     Callable<State> task = trans.getTask();
     state = getScheduledExecutorService().schedule(task, 1L, TimeUnit.HOURS).get();
 }
-if (state == Transaction.State.CERT_ISSUED) {
+if (state == State.CERT_ISSUED) {
     CertStore store = trans.getCertStore();
-} else {
+} else if (state == State.CERT_NON_EXISTANT) {
     FailInfo fail = trans.getFailureReason();
+} else {
+    // Unexpected
 }
 }}}
 
@@ -64,10 +66,12 @@ Transaction trans = client.createTransaction();
 // Send the enrollment request using our secret password
 State state = trans.enrollCertificate(identity, keyPair, "password".toCharArray()); 
 // Check for completion
-if (state == Transaction.State.CERT_ISSUED) {
+if (state == State.CERT_ISSUED) {
     CertStore store = trans.getCertStore();
 } else if (state == State.CERT_NON_EXISTANT) {
    FailInfo fail = trans.getFailureReason();
+} else {
+   // We don't want to wait around...
 }
 }}}
 
