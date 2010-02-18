@@ -39,11 +39,7 @@ if (state == State.CERT_ISSUED) {
 }
 }}}
 
-==== Renewing a Self-Signed Certificate ====
-
-==== Renewing an Existing Certificate ====
-
-If the CA [InformationRequests#Determining_Server_Capabilities supports renewal], we can renew an existing certificate.  This example assumes automatic enrollment.
+==== Automatic Enrollment ====
 
 {{{
 // Locate the existing certificate
@@ -65,6 +61,50 @@ Client client = builder.build();
 Transaction trans = client.createTransaction();
 // Send the enrollment request using our secret password
 State state = trans.enrollCertificate(identity, keyPair, "password".toCharArray()); 
+// Check for completion
+if (state == State.CERT_ISSUED) {
+    CertStore store = trans.getCertStore();
+} else if (state == State.CERT_NON_EXISTANT) {
+   FailInfo fail = trans.getFailureReason();
+} else {
+   // We don't want to wait around...
+}
+}}}
+
+==== Renewing an Existing Certificate ====
+
+If the CA [InformationRequests#Determining_Server_Capabilities supports renewal], we can renew an existing certificate.  This example assumes automatic enrollment.
+
+{{{
+// Locate the existing certificate
+X509Certificate existing = ...;
+KeyPair existingKeyPair = ...;
+// Locate the self-signed identity certificate
+X509Certificate identity = ...;
+// ...and the key pair
+KeyPair keyPair = ...;
+// Locate the SCEP server
+URL url = new URL("http://www.example.org/scep/pkiclient.exe");
+// Specify the CA digest
+byte[] digest = getDigest();
+
+// Create our new client
+Client.Builder builder = new Client.Builder();
+builder.url(url);
+builder.caFingerprint(digest, "MD5");
+builder.identity(identity, keyPair);
+Client client = builder.build();
+
+Transaction trans = client.createTransaction();
+// Send the enrollment request using our secret password
+State state;
+if (client.getCaCapabilities().isRenewalSupported()) {
+    // Renewal is supported
+    state = trans.enrollCertificate(existing, existingKeyPair, "password".toCharArray()); 
+} else {
+    // Renewal isn't supported, so use a self-signed certificate
+    state = trans.enrollCertificate(identity, keyPair, "password".toCharArray()); 
+}
 // Check for completion
 if (state == State.CERT_ISSUED) {
     CertStore store = trans.getCertStore();
