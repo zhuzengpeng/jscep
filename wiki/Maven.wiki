@@ -24,4 +24,4 @@ To add the jSCEP API as a dependency to your own Maven project, add the followin
 
 Maven repository hosting for jSCEP artifacts is provided by [http://nexus.sonatype.org/oss-repository-hosting.html Sonatype].
 
-[http://www.sonatype.com http://sonatype.com/system/files/powered%20by%20sonatype.png]
+[http://www.sonatype.com http://oss.sonatype.org/images/branding.png]
