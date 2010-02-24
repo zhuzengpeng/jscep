@@ -34,4 +34,4 @@ As part of our [QualityAssurance QA] process, we would like to be able to schedu
 
 = Javadocs =
 
-  * [http://www.bouncycastle.org/docs/docs1.6/index.html Bouncy Castle]
+  * [http://www.bouncycastle.org/docs/docs1.6/index.html Bouncy Castle], [http://www.bouncycastle.org/docs/mdocs1.6/index.html CMS]
