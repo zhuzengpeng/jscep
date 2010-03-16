@@ -315,7 +315,11 @@ Internet-Draft                    SCEP                     November 2009
 
    Before a requester can start a PKI transaction, it MUST have at least
    one RSA key pair use for signing the SCEP pkiMessage (Section 3.1).
+</pre>
 
+*OK*
+
+<pre>
    The requester MUST use RSA keys for all symmetric key operations.
    (The message types, being based on PKCS#7 [RFC2315], fully support
    algorithm agility).
