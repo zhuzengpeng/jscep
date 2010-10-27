@@ -1,0 +1,6 @@
+|| *Message* || *Message Data* ||
+|| PKCSReq || CertificationRequest ||
+|| CertRep || SignedData ||
+|| GetCertInitial || IssuerAndSubject ||
+|| GetCert || IssuerAndSerial ||
+|| GetCRL || IssuerAndSerial ||
