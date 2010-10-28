@@ -43,6 +43,14 @@ SEQUENCE [ContentInfo]
         SEQUENCE
           // issuer (Name)
           SEQUENCE
+            // RelativeDistinguishedName
+            SET
+              // AttributeTypeAndDistinguishedValue
+              SEQUENCE
+                // type
+                OBJECT IDENTIFIER id-at-commonName
+                // value
+                PrintableString ?
           // serialNumber (CertificateSerialNumber)
           INTEGER ?
         // digestAlgorithm (DigestAlgorithmIdentifier)
