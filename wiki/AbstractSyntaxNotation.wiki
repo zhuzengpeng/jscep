@@ -8,10 +8,11 @@
 {{{
 SEQUENCE [ContentInfo]
   // contentType
-  OBJECT IDENTIFIER (pkcs-7 signedData)
+  OBJECT IDENTIFIER pkcs-7 signedData
   // content
   [0] 
-    SEQUENCE [SignedData aka pkiMessage]
+    // pkiMessage
+    SEQUENCE [SignedData]
       // version
       INTEGER 1
       // digestAlgorithms
@@ -31,7 +32,9 @@ SEQUENCE [ContentInfo]
           // contentType
           OBJECT IDENTIFIER pkcs-7 envelopedData
           // content
-          SEQUENCE [EnvelopedData aka pkcsPkiEnvelope]
+          [0]
+            // pkcsPkiEnvelope
+            SEQUENCE [EnvelopedData]
       // certificates
       // crls
       // signerInfos (SignerInfos)
