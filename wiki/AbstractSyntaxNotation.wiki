@@ -35,6 +35,44 @@ SEQUENCE [ContentInfo]
           [0]
             // pkcsPkiEnvelope
             SEQUENCE [EnvelopedData]
+              // version
+              INTEGER 0
+              // recipientInfos [RecipientInfos]
+              SET
+                // RecipientInfo
+                SEQUENCE
+                  // version
+                  INTEGER 0
+                  // issuerAndSerialNumber
+                  SEQUENCE
+                    // issuer [Name]
+                    SEQUENCE
+                      // RelativeDistinguishedName
+                      SET
+                        // AttributeTypeAndDistinguishedValue
+                        SEQUENCE
+                        // type
+                        OBJECT IDENTIFIER id-at-commonName
+                        // value
+                        PrintableString ?
+                    // serialNumber
+                    INTEGER ?
+                  // keyEncryptionAlgorithm
+                  OBJECT IDENTIFIER 1.2.840.113549.1.1.1 (rsa)
+                  // encryptedKey
+                  OCTET STRING
+              // encryptedContentInfo [EncryptedContentInfo]
+              SEQUENCE
+                // contentType
+                OBJECT IDENTIFIER pkcs-7 data
+                // contentEncryptionAlgorithm
+                SEQUENCE
+                  // algorithm
+                  OBJECT IDENTIFIER 1.2.840.113549.3.7
+                  // parameters (IV)
+                  OCTET STRING
+                // encryptedContent
+                OCTET STRING
       // certificates
       // crls
       // signerInfos (SignerInfos)
