@@ -4,3 +4,23 @@
 || !GetCertInitial || !IssuerAndSubject ||
 || !GetCert || !IssuerAndSerial ||
 || GetCRL || !IssuerAndSerial ||
+
+{{{
+// Content Info
+SEQUENCE
+  // contentType
+  OBJECT IDENTIFIER (pkcs-7 signedData)
+  // content SignedData (pkiMessage)
+  SEQUENCE
+    // version
+    INTEGER 1
+    // digestAlgorithms
+    SET
+      // algorithmIdentifier
+      SEQUENCE
+        // algorithm
+        OBJECT IDENTIFIER (secsig 2 26) [rsa]
+        // parameters
+        ANY
+    
+}}}
