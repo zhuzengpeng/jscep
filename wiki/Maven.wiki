@@ -15,7 +15,7 @@ To add the jSCEP API as a dependency to your own Maven project, add the followin
     <dependency>
         <groupId>com.google.code.jscep</groupId>
         <artifactId>jscep-api</artifactId>
-        <version>0.20.6</version>
+        <version>1.1.1</version>
     </dependency>
 </dependencies>
 }}}
