@@ -52,6 +52,10 @@ Next, you have to provide a certificate and key pair to represent the SCEP clien
 builder.identity(clientCertificate, clientKeyPair);
 }}}
 
+  # If the requesting system already has a certificate issued by the SCEP server, and the server supports RENEWAL (see Appendix C), that certificate SHOULD be used.
+  # If the requesting system has no certificate issued by the new CA, but has credentials from an alternate CA the certificate issued by the alternate CA MAY be used.  Policy settings on the new CA will determine if the request can be accepted or not.  This is useful when enrolling with a new administrative domain; by using a certificate from the old domain as credentials.
+  # If the requester does not have an appropriate existing certificate, then a locally generated self-signed certificate MUST be used instead.  The self-signed certificate MUST use the same subject name as in the PKCS#10 request.
+
 === Technical Note on Key Pairs ==
 
 The key pair you provide *must* satisfy be an RSA key pair, satisfying the following conditions:
