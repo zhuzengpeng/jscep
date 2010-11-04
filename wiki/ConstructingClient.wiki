@@ -110,3 +110,17 @@ try {
 }}}
 
 If the operation succeeds, the method returns a collection of certificates (which may include the CA certificate).  If the operation fails, e.g. if the serial number does not correspond to a certificate issued by the CA, the method will throw an `OperationFailureException`, which can be used to retrieve the reason for failure.
+
+=== Certificate Revocation List Retrieval ===
+
+The SCEP client can be used to retrieve the latest CRL from the CA, if supported:
+
+{{{
+try {
+    Collection<X509CRL> crls = client.getRevocationList();
+} catch (OperationFailureException e) {
+    FailInfo fail = e.getFailInfo();
+}
+}}}
+
+As with the certificate retrieval above, `getRecovationList()` will throw a `OperationFailureException` if the operation could not be completed successfully.  If the operation is successful, a collection of CRLs (which may be empty) will be returned.
