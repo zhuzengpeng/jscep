@@ -38,3 +38,17 @@ You can then used the overloaded constructor to provide this profile name:
 {{{
 Client client = new Client(server, cert, priKey, handler, profile);
 }}}
+
+== Using the Client ==
+
+The SCEP client supports three main operations:
+
+  # Enrolment
+  # Certificate Retrieval
+  # Certificate Revocation List Retrieval
+
+Plus a further three supporting operations:
+
+  # CA Certificate Retrieval
+  # Rollover CA Certificate Retrieval
+  # Listing Server Capabilities
