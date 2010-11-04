@@ -141,6 +141,14 @@ If the SCEP server is acting as an RA, the returned list will contain two certif
 
 ==== Rollover CA Certificate Retrieval ====
 
+The SCEP client can be used to retrieve the next certificate to be used by the CA.  This functionality is used by the client to determine which public key to use to encrypt SCEP messages for the CA.  If a CA certificate is coming to its end of life, the PKI administrator may choose to "queue" a new certificate to be used on some future date around the time when the current CA expires.  The SCEP client will use this method in conjunction with an inspection of the server capabilities to identify the CA certificate to use.
+
+{{{
+List<X509Certificate> caChain = getRolloverCertificate();
+}}}
+
+As with the [#CA_Certificate_Retrieval CA Certificate Retrieval], the list may contain one or more certificates.
+
 
 
 ==== Listing Server Capabilities ====
