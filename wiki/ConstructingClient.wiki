@@ -1,8 +1,7 @@
 #summary How to construct a new Client instance
 
-In order to construct a new Client instance, you need to provide:
+The SCEP specification details three different scenarios for constructing a client:
 
-  * the URL of your SCEP server
-  * an [http://download.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html X509Certificate]
-  * a [http://download.oracle.com/javase/6/docs/api/java/security/PrivateKey.html PrivateKey]
-  * a [http://download.oracle.com/javase/6/docs/api/javax/security/auth/callback/CallbackHandler.html CallbackHandler]
+  # initial enrolment
+  # renewal
+  # transitioning to a new PKI
