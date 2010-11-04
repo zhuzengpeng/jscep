@@ -7,3 +7,26 @@ The SCEP specification details three different scenarios for constructing a clie
   # Initial Enrolment
 
 For the sake of simplicity, we will deal with only the initial enrolment scenario.  The SCEP specification states that, if you are making an initial enrolment, you should generate an ephemeral key pair and self-signed certificate to represent your client, and that the certificate subject should be the same as the subject in any CSR you plan to enrol.
+
+In addition to these parts you 
+
+{{{
+URL server = new URL("http://pki.example.org:8080/scep/pkiclient.exe");
+// Used to sign SCEP requests
+PrivateKey priKey = ...;
+// Used by the server to verify the signature, and encrypt responses
+X509Certificate cert = ...;
+// Used to verify the identity of the SCEP server
+CallbackHandler handler = ...;
+
+Client client = new Client(server, cert, priKey, handler);
+}}}
+
+If your SCEP server supports multiple identities, you can provide the name of the identity as well, e.g.
+
+{{
+...
+String identity = "PublicCA";
+
+Client client = new Client(server, cert, priKey, handler, identity);
+}}}
