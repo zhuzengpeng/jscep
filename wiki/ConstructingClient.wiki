@@ -95,4 +95,4 @@ The last state -- pending (`State.CERT_REQ_PENDING`) -- means that the CA has no
 state = txn.poll();
 }}}
 
-The state returned from `poll()` is the same as that returned from send().
+The state returned from `poll()` is the same as that returned from `send()`, so the steps outlined above should be followed until either a success or failure state is reached.
