@@ -24,7 +24,7 @@ Client client = new Client(server, cert, priKey, handler);
 
 If your SCEP server supports multiple identities, you can provide the name of the identity as well, e.g.
 
-{{
+{{{
 ...
 String identity = "PublicCA";
 
