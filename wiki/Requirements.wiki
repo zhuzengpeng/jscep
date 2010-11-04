@@ -9,3 +9,11 @@ This is used for ASN.1
 *[http://commons.apache.org/codec/ Commons Codec]*
 
 This is used for Hex and Base64 encoding and decoding.
+
+|*Library*|*Scope*|
+|Bouncy Castle Provider|-|
+|Bouncy Castle CMS|-|
+|Apache Commons Codec|-|
+|EasyMock|Test|
+|JUnit|Test|
+|Jetty|Test|
