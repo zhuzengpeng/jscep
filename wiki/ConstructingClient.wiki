@@ -46,14 +46,14 @@ Client client = new Client(server, cert, priKey, handler, profile);
 The SCEP client supports three main operations:
 
   # [#Enrolment Enrolment]
-  # Certificate Retrieval
-  # Certificate Revocation List Retrieval
+  # [#Certificate_Retrieval Certificate Retrieval]
+  # [#Certificate_Revocation_List_Retrieval Certificate Revocation List Retrieval]
 
 Plus a further three supporting operations:
 
-  # CA Certificate Retrieval
-  # Rollover CA Certificate Retrieval
-  # Listing Server Capabilities
+  # [#CA_Certificate_Retrieval CA Certificate Retrieval]
+  # [#Rollover_CA_Certificate_Retrieval Rollover CA Certificate Retrieval]
+  # [#Listing_Server_Capabilities Listing Server Capabilities]
 
 === Enrolment ===
 
