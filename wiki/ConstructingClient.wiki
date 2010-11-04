@@ -64,7 +64,7 @@ CertificationRequest csr = ...;
 EnrolmentTransaction txn = client.enrol(csr);
 }}}
 
-After calling enrol, you will receive an EnrolmentTransaction object.  You should then call send() on this object, to send the actual request to the server:
+After calling enrol, you will receive an `EnrolmentTransaction` object.  You should then call `send()` on this object, to send the actual request to the server:
 
 {{{
 State state = txn.send();
@@ -76,23 +76,23 @@ The State object is an enum which represents one of the following states:
   # Failure
   # Result Pending
 
-If the transaction was successful (State.CERT_ISSUED), the CSR was accepted, and a certificate has been returned.  To retrieve the certificate, call getCertStore() on the transaction, and retrieve the certificate:
+If the transaction was successful (`State.CERT_ISSUED`), the CSR was accepted, and a certificate has been returned.  To retrieve the certificate, call `getCertStore()` on the transaction, and retrieve the certificate:
 
 {{{
 CertStore store = txn.getCertStore();
 Collection<? extends Certificate> certs = store.getCertificates(null);
 }}}
 
-If the transaction failed (State.CERT_NON_EXISTANT), the CSR was *not* accepted.  You can retrieve the failure reason by calling getFailInfo():
+If the transaction failed (`State.CERT_NON_EXISTANT`), the CSR was *not* accepted.  You can retrieve the failure reason by calling `getFailInfo()`:
 
 {{{
 FailInfo fail = txn.getFailInfo();
 }}}
 
-The last state -- pending (State.CERT_REQ_PENDING) -- means that the CA has not yet made a decision about the enrolment request, and that you should call poll() on the transaction object periodically to get an update:
+The last state -- pending (`State.CERT_REQ_PENDING`) -- means that the CA has not yet made a decision about the enrolment request, and that you should call `poll()` on the transaction object periodically to get an update:
 
 {{{
 state = txn.poll();
 }}}
 
-The state returned from poll() is the same as that returned from send().
+The state returned from `poll()` is the same as that returned from send().
