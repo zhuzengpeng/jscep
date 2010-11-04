@@ -1,15 +1,5 @@
 #summary How to construct a new Client instance
 
-The SCEP specification details three different scenarios for constructing a client:
-
-  # Renewal
-  # Transitioning to a new PKI
-  # Initial Enrolment
-
-For the sake of simplicity, we will deal with only the initial enrolment scenario.  The SCEP specification states that, if you are making an initial enrolment, you should generate an ephemeral key pair and self-signed certificate to represent your client, and that the certificate subject should be the same as the subject in any CSR you plan to enrol.
-
-In addition to these parts you 
-
 {{{
 URL server = new URL("http://pki.example.org:8080/scep/pkiclient.exe");
 // Used to sign SCEP requests
