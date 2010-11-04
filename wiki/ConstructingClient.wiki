@@ -6,4 +6,4 @@ The SCEP specification details three different scenarios for constructing a clie
   # Transitioning to a new PKI
   # Initial Enrolment
 
-For the sake of simplicity, we will deal with only the initial enrolment scenario.
+For the sake of simplicity, we will deal with only the initial enrolment scenario.  The SCEP specification states that, if you are making an initial enrolment, you should generate an ephemeral key pair and self-signed certificate to represent your client, and that the certificate subject should be the same as the subject in any CSR you plan to enrol.
