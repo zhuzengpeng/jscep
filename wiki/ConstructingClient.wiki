@@ -49,7 +49,7 @@ The SCEP client supports three main operations:
   # [#Certificate_Retrieval Certificate Retrieval]
   # [#Certificate_Revocation_List_Retrieval Certificate Revocation List Retrieval]
 
-Plus a further three supporting operations:
+Plus a further three [#Supporting_Operation supporting operations]:
 
   # [#CA_Certificate_Retrieval CA Certificate Retrieval]
   # [#Rollover_CA_Certificate_Retrieval Rollover CA Certificate Retrieval]
@@ -124,3 +124,9 @@ try {
 }}}
 
 As with the certificate retrieval above, `getRecovationList()` will throw a `OperationFailureException` if the operation could not be completed successfully.  If the operation is successful, a collection of CRLs (which may be empty) will be returned.
+
+=== Supporting Operations ===
+
+==== CA Certificate Retrieval ====
+==== Rollover CA Certificate Retrieval ====
+==== Listing Server Capabilities ====
