@@ -6,8 +6,7 @@ Firstly, you will need is the URL of your SCEP server:
 URL server = new URL("http://pki.example.org:8080/scep/pkiclient.exe");
 }}}
 
-Next, you will need a private key and X509 certificate to represent your SCEP client.  The 
- private key is used to sign SCEP messages.  The certificate is used by the server to verifying the signature on your SCEP messages, and for encrypting its responses.
+Next, you will need a private key and X509 certificate to represent your SCEP client.  The private key is used to sign SCEP messages.  The certificate is used by the server to verifying the signature on your SCEP messages, and for encrypting its responses.
 
 {{{
 // Used to sign SCEP requests
