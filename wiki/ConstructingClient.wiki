@@ -127,6 +127,45 @@ As with the certificate retrieval above, `getRecovationList()` will throw a `Ope
 
 === Supporting Operations ===
 
+The following operations exist to support the main operations discussed above, and are can only be used for informational purposes.
+
 ==== CA Certificate Retrieval ====
+
+The SCEP client can be used to retrieve the current CA certificate:
+
+{{{
+List<X509Certificate> caChain = client.getCaCertificate();
+}}}
+
+If the SCEP server is acting as an RA, the returned list will contain two certificates representing the RA and CA.  If the SCEP server is acting as a CA, the list will contain only one certificate.
+
 ==== Rollover CA Certificate Retrieval ====
+
+
+
 ==== Listing Server Capabilities ====
+
+The SCEP client can be used to retrieve a list of operations supported by the SCEP client:
+
+{{{
+Capabilities caps = client.getCaCapabilities();
+}}}
+
+The capabilities object is used by the SCEP client in the main operations to determine server support for security algorithms, enrolment scenarios and allowed transports:
+
+{{{
+// is HTTP POST supported for SCEP messages?
+boolean usePost = caps.isPostSupported();
+
+// does the server support rollover certificates?
+boolean rollover = caps.isRolloverSupported();
+
+// is certificate renewal supported?
+boolean renewal = caps.isRenewalSupported();
+
+// retrieve the strongest cipher (DES or Triple DES)
+String cipher = caps.getStrongestCipher();
+
+// retrieve the strongest digest (MD5, SHA-1, SHA-256 or SHA-512)
+String digest = caps.getStrongestMessageDigest();
+}}}
