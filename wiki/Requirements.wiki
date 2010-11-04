@@ -1,7 +1,5 @@
 #sidebar TableOfContents
 
-== API Dependencies ==
-
 ||*Library*||*Maven Scope*||
 ||Bouncy Castle Provider||-||
 ||Bouncy Castle CMS||-||
