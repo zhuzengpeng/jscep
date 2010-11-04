@@ -2,7 +2,7 @@
 
 <wiki:toc/>
 
-== Constructing a Client ==
+== Creating a new Client ==
 
 Firstly, you will need is the URL of your SCEP server:
 
