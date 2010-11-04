@@ -10,10 +10,12 @@ This is used for ASN.1
 
 This is used for Hex and Base64 encoding and decoding.
 
-|*Library*|*Scope*|
-|Bouncy Castle Provider|-|
-|Bouncy Castle CMS|-|
-|Apache Commons Codec|-|
-|EasyMock|Test|
-|JUnit|Test|
-|Jetty|Test|
+== API Dependencies ==
+
+||*Library*||*Maven Scope*||
+||Bouncy Castle Provider||Compile||
+||Bouncy Castle CMS||Compile||
+||EasyMock||Test||
+||JUnit||Test||
+||Jetty||Test||
+||Servlet API||Provided||
