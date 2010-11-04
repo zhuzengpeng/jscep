@@ -64,7 +64,7 @@ CertificationRequest csr = ...;
 EnrolmentTransaction txn = client.enrol(csr);
 }}}
 
-After calling enrol, you will receive an `EnrolmentTransaction` object.  You should then call `send()` on this object, to send the actual request to the server:
+After calling `enrol()`, you will receive an `EnrolmentTransaction` object.  You should then call `send()` on this object, to send the actual request to the server:
 
 {{{
 State state = txn.send();
