@@ -1,5 +1,7 @@
 #summary How to construct a new Client instance
 
+== Constructing a Client ==
+
 Firstly, you will need is the URL of your SCEP server:
 
 {{{
