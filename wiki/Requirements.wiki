@@ -1,20 +1,10 @@
 #sidebar TableOfContents
 
-In addition to [http://java.sun.com/javase/downloads/index.jsp Java], you will need the following libraries in your classpath to use jSCEP:
-
-*[http://www.bouncycastle.org/latest_releases.html Bouncy Castle Provider]*
-
-This is used for ASN.1
-
-*[http://commons.apache.org/codec/ Commons Codec]*
-
-This is used for Hex and Base64 encoding and decoding.
-
 == API Dependencies ==
 
 ||*Library*||*Maven Scope*||
-||Bouncy Castle Provider||Compile||
-||Bouncy Castle CMS||Compile||
+||Bouncy Castle Provider||-||
+||Bouncy Castle CMS||-||
 ||EasyMock||Test||
 ||JUnit||Test||
 ||Jetty||Test||
