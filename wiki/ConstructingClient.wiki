@@ -6,34 +6,33 @@ Firstly, you will need is the URL of your SCEP server:
 URL server = new URL("http://pki.example.org:8080/scep/pkiclient.exe");
 }}}
 
-Next, you will need a private key and X509 certificate to represent your SCEP client.  The private key is used to sign SCEP messages.  The certificate is used by the server for verifying the signature on your SCEP messages, and for encrypting its responses.
+Next, you will need an RSA private key and X509 certificate to represent your SCEP client.  The private key is used to sign SCEP messages.  The certificate is used by the server for verifying the signature on your SCEP messages, and for encrypting its responses.
 
 {{{
-// Used to sign SCEP requests
 PrivateKey priKey = ...;
-// Used by the server to verify the signature, and encrypt responses
 X509Certificate cert = ...;
 }}}
 
-{{{
-// Used to verify the identity of the SCEP server
-CallbackHandler handler = ...;
+Next, you'll need a callback handler.  The handler is used for verifying the identity of the CA represented by the SCEP server.
 
+{{{
+CallbackHandler handler = ...;
+}}}
+
+We now have all we need to create a SCEP client:
+
+{{{
 Client client = new Client(server, cert, priKey, handler);
 }}}
 
-If your SCEP server supports multiple identities, you can provide the name of the identity as well, e.g.
+If your SCEP server supports multiple identities, you can provide the name of the identity as a String:
 
 {{{
-URL server = new URL("http://pki.example.org:8080/scep/pkiclient.exe");
-// Used to sign SCEP requests
-PrivateKey priKey = ...;
-// Used by the server to verify the signature, and encrypt responses
-X509Certificate cert = ...;
-// Used to verify the identity of the SCEP server
-CallbackHandler handler = ...;
-// Profile used by this CA
 String profile = "PublicCA";
+}}}
 
+You can then used the overloaded constructor to provide this profile name:
+
+{{{
 Client client = new Client(server, cert, priKey, handler, profile);
 }}}
