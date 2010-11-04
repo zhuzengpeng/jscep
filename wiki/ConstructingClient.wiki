@@ -32,7 +32,8 @@ PrivateKey priKey = ...;
 X509Certificate cert = ...;
 // Used to verify the identity of the SCEP server
 CallbackHandler handler = ...;
-String identity = "PublicCA";
+// Profile used by this CA
+String profile = "PublicCA";
 
-Client client = new Client(server, cert, priKey, handler, identity);
+Client client = new Client(server, cert, priKey, handler, profile);
 }}}
