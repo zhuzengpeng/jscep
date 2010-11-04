@@ -2,6 +2,6 @@
 
 The SCEP specification details three different scenarios for constructing a client:
 
-  # initial enrolment
-  # renewal
-  # transitioning to a new PKI
+  # Initial Enrolment
+  # Renewal
+  # Transitioning to a new PKI
